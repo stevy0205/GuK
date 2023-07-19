@@ -1,5 +1,8 @@
 KuG - Anleitung
 
+Voraussetzungen:
+  - Auflösung am besten 1920x1080, mindestens 1366x768
+
 #1
 Die Batchdatei startGuK.bat ausführen. Diese führt einen lokalen Server aus auf welchem die Anwendung dann läuft.
 Nach Ausführen der Batch Datei öffnet sich das Terminal welches die nötigen Befehle ausführt. Bei erfolgreicher Ausführung
