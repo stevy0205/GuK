@@ -75,7 +75,7 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                               children: [
                                 Expanded(
                                   child: Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.75),
+                                    alignment: AlignmentDirectional(-1.0, 0.85),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -180,7 +180,7 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                                               context.pushNamed(
                                                   'Fussabdruck-Treibhauseffekt');
                                             },
-                                            text: 'Weitere information',
+                                            text: 'Weitere Information',
                                             options: FFButtonOptions(
                                               width: 300.0,
                                               height: 40.0,
@@ -236,7 +236,7 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                         ],
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.75, 0.38),
+                        alignment: AlignmentDirectional(0.73, 0.54),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
@@ -252,10 +252,10 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.83, -0.78),
+                alignment: AlignmentDirectional(0.81, -0.93),
                 child: Container(
                   width: 440.0,
-                  height: 233.0,
+                  height: 318.0,
                   decoration: BoxDecoration(
                     color: Color(0xFF0865AD),
                   ),
@@ -263,7 +263,7 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                     padding:
                         EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                     child: Text(
-                      'Bett in Krankenhaus verbraucht 300-600 Liter Wasser/Tag\n\nGesundheitssektor macht 4,4% der globalen Treibhausgase aus \n\nKlimawandelstrategie vernachlässigt Gesundheitssektor',
+                      'Bett in Krankenhaus verbraucht 300-600 Liter Wasser/Tag\n\nGesundheitssektor macht 4,4% der globalen Treibhausgase aus \n\nKlimawandelstrategie vernachlässigt Gesundheitssektor\n\nQuelle: Zielbild: \"Klimaneutrales Krankenhaus\" Maßnahmen für mehr Klimaschutz im Krankenhaus (Wagner O, Jansen U, Tholen L et al.)',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,

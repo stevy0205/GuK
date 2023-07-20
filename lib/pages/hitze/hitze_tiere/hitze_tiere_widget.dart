@@ -66,28 +66,31 @@ class _HitzeTiereWidgetState extends State<HitzeTiereWidget> {
                 alignment: AlignmentDirectional(-0.89, -0.95),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.5,
-                  height: MediaQuery.sizeOf(context).height * 0.34,
+                  height: MediaQuery.sizeOf(context).height * 0.28,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Bei 1,5 Grad Celsius\nErhitzung sind\nmindestens 70 % aller \nKorallenriffe auf der Welt \nbis 2050 verschwunden',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 90.0,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Bei 1,5 Grad Celsius Erhitzung sind\nmindestens 70 % aller Korallenriffe \nauf der Welt bis 2050 verschwunden',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 36.0,
+                          ),
+                    ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.74, 0.34),
+                alignment: AlignmentDirectional(0.84, 0.34),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/greatbarrier_reef.png',
-                    width: MediaQuery.sizeOf(context).width * 0.35,
+                    width: MediaQuery.sizeOf(context).width * 0.4,
                     height: MediaQuery.sizeOf(context).height * 0.6,
                     fit: BoxFit.fill,
                   ),
@@ -250,9 +253,9 @@ class _HitzeTiereWidgetState extends State<HitzeTiereWidget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.74, -0.82),
+                alignment: AlignmentDirectional(0.84, -0.82),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.35,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
                   height: MediaQuery.sizeOf(context).height * 0.15,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
@@ -263,10 +266,32 @@ class _HitzeTiereWidgetState extends State<HitzeTiereWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).alternate,
-                          fontSize: 100.0,
+                          fontSize: 40.0,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.74, -0.91),
+                child: Text(
+                  'https://www.wwf.at/artikel/folgen-der-klimakrise-15-grad-versus-2-grad/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 13.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.69, 0.77),
+                child: Text(
+                  'https://de.statista.com/infografik/19424/weltweite-meerestemperatur/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 13.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

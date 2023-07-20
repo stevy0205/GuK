@@ -69,7 +69,7 @@ class _HitzeMortalitaetWidgetState extends State<HitzeMortalitaetWidget> {
                   child: Image.asset(
                     'assets/images/Hitzebedingte_Sterbefalle-DE.png',
                     width: MediaQuery.sizeOf(context).width * 0.5,
-                    height: MediaQuery.sizeOf(context).height * 0.5,
+                    height: MediaQuery.sizeOf(context).height * 0.45,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -211,19 +211,19 @@ class _HitzeMortalitaetWidgetState extends State<HitzeMortalitaetWidget> {
                 alignment: AlignmentDirectional(-0.88, -0.8),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.32,
+                  height: MediaQuery.sizeOf(context).height * 0.28,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(-0.85, -0.79),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      '                          Dehydration\n   - 2020 ACHTMAL mehr \n      Todesfällen als  im Jahr 2000\n   - Behandlungen  und Todesfälle \n      überdurchschnittlich',
+                      '                      Dehydration\n   - 2020 ACHTMAL mehr \n      Todesfällen als  im Jahr 2000\n   - Behandlungen  und Todesfälle \n      überdurchschnittlich',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 85.0,
+                            fontSize: 26.0,
                             fontWeight: FontWeight.w600,
                           ),
                     ),
@@ -241,12 +241,12 @@ class _HitzeMortalitaetWidgetState extends State<HitzeMortalitaetWidget> {
                   child: Align(
                     alignment: AlignmentDirectional(-0.86, 0.39),
                     child: Text(
-                      '                          Hitzeschlag\n   - ältere Menschen\n   - Kinder\n   - Personen mit Vorerkrankungen\n   - Personen, die im freien arbeiten\n',
+                      '                          Hitzeschlag\n   - ältere Menschen\n   - Kinder\n   - Personen mit Vorerkrankungen\n   - Personen, die im freien \n      arbeiten\n',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 85.0,
+                            fontSize: 27.0,
                             fontWeight: FontWeight.w600,
                           ),
                     ),
@@ -267,10 +267,21 @@ class _HitzeMortalitaetWidgetState extends State<HitzeMortalitaetWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 80.0,
+                          fontSize: 30.0,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.94, 0.76),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/1240429/umfrage/-hitzebedingte-uebersterblichkeit-in-deutschland/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

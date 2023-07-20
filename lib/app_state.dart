@@ -32,7 +32,7 @@ class FFAppState extends ChangeNotifier {
     _card5Flipped = _value;
   }
 
-  Color _checkButtonColor = Colors.transparent;
+  Color _checkButtonColor = Color(4281979584);
   Color get checkButtonColor => _checkButtonColor;
   set checkButtonColor(Color _value) {
     _checkButtonColor = _value;
@@ -355,6 +355,43 @@ class FFAppState extends ChangeNotifier {
   bool get pic6Solved => _pic6Solved;
   set pic6Solved(bool _value) {
     _pic6Solved = _value;
+  }
+
+  bool _showHitzeGenerell = false;
+  bool get showHitzeGenerell => _showHitzeGenerell;
+  set showHitzeGenerell(bool _value) {
+    _showHitzeGenerell = _value;
+  }
+
+  bool _showHitzeInfektionen = false;
+  bool get showHitzeInfektionen => _showHitzeInfektionen;
+  set showHitzeInfektionen(bool _value) {
+    _showHitzeInfektionen = _value;
+  }
+
+  bool _showHizeLebensmittel = false;
+  bool get showHizeLebensmittel => _showHizeLebensmittel;
+  set showHizeLebensmittel(bool _value) {
+    _showHizeLebensmittel = _value;
+  }
+
+  bool _showHitzeMental = false;
+  bool get showHitzeMental => _showHitzeMental;
+  set showHitzeMental(bool _value) {
+    _showHitzeMental = _value;
+  }
+
+  bool _showNaturkatastrophenInfektionen = false;
+  bool get showNaturkatastrophenInfektionen =>
+      _showNaturkatastrophenInfektionen;
+  set showNaturkatastrophenInfektionen(bool _value) {
+    _showNaturkatastrophenInfektionen = _value;
+  }
+
+  bool _showNaturkatastrophenMental = false;
+  bool get showNaturkatastrophenMental => _showNaturkatastrophenMental;
+  set showNaturkatastrophenMental(bool _value) {
+    _showNaturkatastrophenMental = _value;
   }
 }
 

@@ -201,6 +201,7 @@ class _QuizHitzeWidgetState extends State<QuizHitzeWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
+                                                fontSize: 42.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
@@ -277,6 +278,7 @@ class _QuizHitzeWidgetState extends State<QuizHitzeWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -353,6 +355,7 @@ class _QuizHitzeWidgetState extends State<QuizHitzeWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -437,6 +440,7 @@ class _QuizHitzeWidgetState extends State<QuizHitzeWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -508,6 +512,7 @@ class _QuizHitzeWidgetState extends State<QuizHitzeWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,

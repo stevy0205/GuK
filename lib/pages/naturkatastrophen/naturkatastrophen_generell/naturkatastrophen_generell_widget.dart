@@ -65,22 +65,25 @@ class _NaturkatastrophenGenerellWidgetState
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(-0.79, 0.52),
+                alignment: AlignmentDirectional(-0.79, 0.53),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.47,
                   height: MediaQuery.sizeOf(context).height * 0.15,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'ÜBER 3,64 Billionen US-Dollar \nKosten in den letzten 20 Jahren',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'ÜBER 3,64 Billionen US-Dollar \nKosten in den letzten 20 Jahren',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 36.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -94,7 +97,7 @@ class _NaturkatastrophenGenerellWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-1.0, 0.75),
+                alignment: AlignmentDirectional(-1.0, 0.95),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -223,12 +226,12 @@ class _NaturkatastrophenGenerellWidgetState
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Text(
-                    'Naturkatastrophen \nin den letzten 20 Jahren \nVERDOPPELT',
+                    'Naturkatastrophen \nin den letzten \n20 Jahren \nVERDOPPELT',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 120.0,
+                          fontSize: 40.0,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
@@ -238,18 +241,22 @@ class _NaturkatastrophenGenerellWidgetState
                 alignment: AlignmentDirectional(0.85, -0.1),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Überschwemmungen +134%',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Überschwemmungen +134%',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 32.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -257,19 +264,22 @@ class _NaturkatastrophenGenerellWidgetState
                 alignment: AlignmentDirectional(0.85, 0.2),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.08,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Stürme +40% zugenommen',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Stürme +40% zugenommen',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 32.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -277,20 +287,45 @@ class _NaturkatastrophenGenerellWidgetState
                 alignment: AlignmentDirectional(0.85, 0.5),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.07,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Dürren +28% gestiegen',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Dürren +28% gestiegen',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 32.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.72, -0.94),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/1222072/umfrage/anzahl-naturkatastrophen/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 13.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.97, 0.67),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/1369419/umfrage/teuerste-naturkatastrophen/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 13.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

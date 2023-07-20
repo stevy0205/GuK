@@ -205,6 +205,7 @@ class _QuizKlimaAufGesundheitWidgetState
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
+                                                fontSize: 42.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
@@ -281,6 +282,7 @@ class _QuizKlimaAufGesundheitWidgetState
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -357,6 +359,7 @@ class _QuizKlimaAufGesundheitWidgetState
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -441,6 +444,7 @@ class _QuizKlimaAufGesundheitWidgetState
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -512,6 +516,7 @@ class _QuizKlimaAufGesundheitWidgetState
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,

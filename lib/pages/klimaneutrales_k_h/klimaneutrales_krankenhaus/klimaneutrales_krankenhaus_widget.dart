@@ -68,32 +68,30 @@ class _KlimaneutralesKrankenhausWidgetState
               Stack(
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(-0.96, -1.0),
+                    alignment: AlignmentDirectional(-0.96, -0.5),
                     child: Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.41,
-                        height: MediaQuery.sizeOf(context).height * 0.85,
+                        height: MediaQuery.sizeOf(context).height * 0.7,
                         decoration: BoxDecoration(
                           color: Color(0xFF0865AD),
                         ),
-                        child: Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 10.0, 10.0, 0.0),
-                            child: AutoSizeText(
-                              'Was bedeutet Klimaneutrales Krankenhaus?\n\nUnterscheidung zwischen CO2-Neutralität, Treibhausgasnetralität und Klimaneutralität\n\nKlimaneutralität hat das klimapolitisch anspruchsvollste Ziel\n\nZiel ist ein Ausgleich von Quellen und Senken aller im Kyoto-Protokoll festgelegten Treibhausgasemissionen\n\nFür Treibhausgasemissionen, die nicht CO2 sind (z.B. Lachgas) gibt es bisher kaum Möglichkeiten diese Bilanzier auszugleichen, daher erfordert Treibhausgasneutralität ein Überfüllen in Bezug auf Co2\n\nHeißt es muss mehr CO2 gespeichert als erzeugt werden\n\nCO2-Neutralität beschreibt entsprechend das niedrigste Ambitionsniveau, wird erreicht wenn alle CO2-Quellen und -Senken ausgeglichen sind',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBtnText,
-                                    fontSize: 20.0,
-                                  ),
-                            ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 10.0, 0.0),
+                          child: AutoSizeText(
+                            'Was bedeutet Klimaneutrales Krankenhaus?\n\nUnterscheidung zwischen CO2-Neutralität, Treibhausgasnetralität und Klimaneutralität\n\nKlimaneutralität hat das klimapolitisch anspruchsvollste Ziel\n\nZiel ist ein Ausgleich von Quellen und Senken aller im Kyoto-Protokoll festgelegten Treibhausgasemissionen\n\nFür Treibhausgasemissionen, die nicht CO2 sind (z.B. Lachgas) gibt es bisher kaum Möglichkeiten diese Bilanzier auszugleichen, daher erfordert Treibhausgasneutralität ein Überfüllen in Bezug auf Co2\n\nHeißt es muss mehr CO2 gespeichert als erzeugt werden\n\nCO2-Neutralität beschreibt entsprechend das niedrigste Ambitionsniveau, wird erreicht wenn alle CO2-Quellen und -Senken ausgeglichen sind\n\nquelle: Zielbild: \"Klimaneutrales Krankenhaus\" Maßnahmen \nfür mehr Klimaschutz im Krankenhaus (Wagner O, Jansen U, Tholen L et al.)',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBtnText,
+                                  fontSize: 19.0,
+                                ),
                           ),
                         ),
                       ),
@@ -224,30 +222,31 @@ class _KlimaneutralesKrankenhausWidgetState
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.95, -1.0),
+                    alignment: AlignmentDirectional(0.68, -0.9),
                     child: Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.4,
-                        height: MediaQuery.sizeOf(context).height * 0.55,
+                        height: MediaQuery.sizeOf(context).height * 0.5,
                         decoration: BoxDecoration(
                           color: Color(0xFF0865AD),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 10.0, 10.0, 10.0, 10.0),
-                            child: Text(
+                            child: AutoSizeText(
                               'Maßnahmen, Klimaneutralität in Krankenhäusern zu erreichen:\nAufbau Klimaschutzmanagement\nBau von Photovoltaik auf Gebäuden und Freiflächen\nklimaschonende Wärme- und Kälteerzeugung\nenergetische Sanierung der Gebäudehüllen\nUmstellung der Beleuchtung auf LED\nModernisierung von Heizungspumpen und Lüftungsanlagen\nFörderung einer Autofreien Mobilität zum KH\nAusbau der Elektromobilität\nSubstitution und Recycling besonders klimaschädlicher Narkosegase',
+                              textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Poppins',
                                     color: FlutterFlowTheme.of(context)
                                         .primaryBtnText,
-                                    fontSize: 20.0,
+                                    fontSize: 18.0,
                                   ),
                             ),
                           ),
@@ -261,7 +260,7 @@ class _KlimaneutralesKrankenhausWidgetState
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/klimakHDreieck.png',
-                        width: MediaQuery.sizeOf(context).width * 0.4,
+                        width: MediaQuery.sizeOf(context).width * 0.3,
                         height: MediaQuery.sizeOf(context).height * 0.37,
                         fit: BoxFit.fill,
                       ),

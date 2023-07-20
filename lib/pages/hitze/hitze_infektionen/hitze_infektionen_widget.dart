@@ -271,59 +271,60 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                             ),
                           ),
                         ),
-                        Align(
-                          alignment: AlignmentDirectional(0.12, 0.5),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 20.0, 0.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                setState(() {
-                                  FFAppState().showContainer1 = true;
-                                });
-                              },
-                              child: Container(
-                                width: 150.0,
-                                height: 150.0,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF0865AD),
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBtnText,
-                                    width: 2.0,
+                        if (!FFAppState().showHitzeInfektionen)
+                          Align(
+                            alignment: AlignmentDirectional(0.12, 0.5),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 20.0, 0.0, 0.0),
+                              child: InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  setState(() {
+                                    FFAppState().showHitzeInfektionen = true;
+                                  });
+                                },
+                                child: Container(
+                                  width: 150.0,
+                                  height: 150.0,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF0865AD),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBtnText,
+                                      width: 2.0,
+                                    ),
                                   ),
-                                ),
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Text(
-                                    'Mehr Lesen',
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryBtnText,
-                                          fontSize: 22.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                  child: Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Text(
+                                      'Mehr Lesen',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryBtnText,
+                                            fontSize: 22.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
                         Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              if (!FFAppState().showContainer1)
+                              if (!FFAppState().showHitzeInfektionen)
                                 Align(
                                   alignment: AlignmentDirectional(0.32, 0.26),
                                   child: Padding(
@@ -370,7 +371,7 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                                     ),
                                   ),
                                 ),
-                              if (!FFAppState().showContainer1)
+                              if (!FFAppState().showHitzeInfektionen)
                                 Align(
                                   alignment: AlignmentDirectional(0.44, -0.18),
                                   child: Padding(
@@ -392,6 +393,7 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                                             AlignmentDirectional(0.0, 0.0),
                                         child: Text(
                                           'Chikungunya-Virus',
+                                          textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -410,7 +412,7 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [],
                               ),
-                              if (!FFAppState().showContainer1)
+                              if (!FFAppState().showHitzeInfektionen)
                                 Align(
                                   alignment: AlignmentDirectional(-0.02, -0.73),
                                   child: Padding(
@@ -460,7 +462,7 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                   ),
                 ],
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showHitzeInfektionen)
                 Align(
                   alignment: AlignmentDirectional(0.98, -0.47),
                   child: Container(
@@ -481,7 +483,7 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
                                 'Durch die steigenden Temperaturen verbreiten sich vermehrt einige Vektoren. Besonders die Ausbreitung der asiatischen Tigermücke mache den Experten Sorgen. Sie etabliere sich derzeit in weiten Teilen Europas und ist insbesondere für Ausbrüche des Chikungunya-Virus und Dengue-Virus im Mittelmeerraum verantwortlich. Sie ist sehr aggressiv und durchsetzungsfähig. Sie ist in der Lage, mehr als 20 verschiedene Viren auf den Menschen zu übertragen und einheimische Stechmückenarten zu verdrängen. Außerdem ist sie sehr anpassungsfähig, was die Wahl geeigneter Brutstätten angeht. Zika-Virus und Dengue Fieber führen zu hohem Fieber, Hautausschlag sowie starken Kopf-, Knochen- und Gliederschmerzen.',
-                                textAlign: TextAlign.justify,
+                                textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -493,11 +495,11 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.71, 0.91),
+                            alignment: AlignmentDirectional(0.71, 1.0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 setState(() {
-                                  FFAppState().showContainer1 = false;
+                                  FFAppState().showHitzeInfektionen = false;
                                 });
                               },
                               text: 'Hide',

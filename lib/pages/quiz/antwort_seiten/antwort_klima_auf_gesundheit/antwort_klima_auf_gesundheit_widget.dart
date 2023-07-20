@@ -113,6 +113,7 @@ class _AntwortKlimaAufGesundheitWidgetState
                                           fontFamily: 'Poppins',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBtnText,
+                                          fontSize: 42.0,
                                         ),
                                   ),
                                 ],
@@ -153,7 +154,12 @@ class _AntwortKlimaAufGesundheitWidgetState
                                           'Ergebniss',
                                           queryParameters: {
                                             'score': serializeParam(
-                                              widget.score,
+                                              functions.countScore(
+                                                  widget.answer!,
+                                                  containerFragenEinflussKlimmwandelAufGesundheitRecordList[
+                                                          widget.index]
+                                                      .richtig,
+                                                  widget.score),
                                               ParamType.int,
                                             ),
                                           }.withoutNulls,
@@ -253,7 +259,14 @@ class _AntwortKlimaAufGesundheitWidgetState
                                                     widget.index]
                                                 .richtig,
                                             style: FlutterFlowTheme.of(context)
-                                                .displayLarge,
+                                                .displayLarge
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBtnText,
+                                                  fontSize: 42.0,
+                                                ),
                                           ),
                                         ),
                                       ),

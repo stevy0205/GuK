@@ -294,8 +294,8 @@ class _FussabdruckTreibhauseffektWidgetState
               Align(
                 alignment: AlignmentDirectional(-0.34, -0.83),
                 child: Container(
-                  width: 135.0,
-                  height: 135.0,
+                  width: MediaQuery.sizeOf(context).width * 0.12,
+                  height: MediaQuery.sizeOf(context).width * 0.12,
                   decoration: BoxDecoration(
                     color: Color(0xFF0865AD),
                     shape: BoxShape.circle,
@@ -304,7 +304,7 @@ class _FussabdruckTreibhauseffektWidgetState
                     padding:
                         EdgeInsetsDirectional.fromSTEB(5.0, 20.0, 5.0, 10.0),
                     child: Text(
-                      '11% des Bruttoinland-produktes',
+                      '11% \ndes Bruttoinland-produktes',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
@@ -342,8 +342,8 @@ class _FussabdruckTreibhauseffektWidgetState
               Align(
                 alignment: AlignmentDirectional(-0.62, -0.43),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.15,
-                  height: MediaQuery.sizeOf(context).width * 0.15,
+                  width: MediaQuery.sizeOf(context).width * 0.13,
+                  height: MediaQuery.sizeOf(context).width * 0.13,
                   decoration: BoxDecoration(
                     color: Color(0xFF0865AD),
                     shape: BoxShape.circle,
@@ -352,7 +352,7 @@ class _FussabdruckTreibhauseffektWidgetState
                     padding:
                         EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 30.0, 30.0),
                     child: Text(
-                      'Intensiv-stationen sind am Energie intensievsten',
+                      'Intensiv-stationen sind am \nEnergie intensievsten',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',

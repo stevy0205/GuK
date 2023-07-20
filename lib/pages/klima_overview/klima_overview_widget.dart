@@ -395,7 +395,7 @@ class _KlimaOverviewWidgetState extends State<KlimaOverviewWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.78, -0.93),
+                alignment: AlignmentDirectional(-0.76, -0.93),
                 child: Text(
                   'Einfluss des Klimas auf die Gesundheit',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -407,7 +407,7 @@ class _KlimaOverviewWidgetState extends State<KlimaOverviewWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.76, -0.93),
+                alignment: AlignmentDirectional(0.86, -0.93),
                 child: Text(
                   'Einfluss des Gesundheitswesens auf das Klima',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(

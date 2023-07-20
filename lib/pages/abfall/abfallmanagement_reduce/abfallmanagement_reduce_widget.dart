@@ -190,7 +190,7 @@ class _AbfallmanagementReduceWidgetState
                         padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 10.0, 10.0, 10.0),
                         child: Text(
-                          'Reduce - Reduzieren\n\nBeispiele wie Kliniken ökologisch und wirtschaftlich nachhaltig arbeiten können:\nBeatmungsschläuche: \n        - können teilweise  7 Tage genutzt werden\nMaterial:\n        - OP-Sets für Einsatz packen, unnötiges vermeiden \n        - Ökologisch und Kosteneffizient\nMedikamente:\n        - Verfall durch geringen Einsatz verhindern\n        - Lösung: Gering dosierte vorgefertigte Mengen, die von Apotheken\n           hergestellt werden\nSonstiges:\n        - Einmalartikel sowohl zu Hause als auch am Arbeitsplatz vermeiden',
+                          'Reduce - Reduzieren\n\nBeispiele wie Kliniken ökologisch und wirtschaftlich nachhaltig arbeiten können:\nBeatmungsschläuche: \n        - können teilweise  7 Tage genutzt werden\nMaterial:\n        - OP-Sets für Einsatz packen, unnötiges vermeiden \n        - Ökologisch und Kosteneffizient\nMedikamente:\n        - Verfall durch geringen Einsatz verhindern\n        - Lösung: Gering dosierte vorgefertigte Mengen, die von Apotheken hergestellt werden\nSonstiges:\n        - Einmalartikel sowohl zu Hause als auch am Arbeitsplatz vermeiden',
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(

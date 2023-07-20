@@ -108,7 +108,7 @@ class _NaturkatastrophenGeburtenrateVideoWidgetState
           child: Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: FlutterFlowVideoPlayer(
-              path: 'assets/videos/NaturkatastrophenGeburtenrate.mp4',
+              path: 'assets/videos/WhatsApp_Video_2023-07-19_at_08.36.19.mp4',
               videoType: VideoType.asset,
               autoPlay: false,
               looping: false,

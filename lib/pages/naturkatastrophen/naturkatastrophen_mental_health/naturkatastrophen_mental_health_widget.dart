@@ -207,7 +207,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                       fit: BoxFit.cover,
                     ),
                   ),
-                  if (FFAppState().showContainer1)
+                  if (FFAppState().showNaturkatastrophenMental)
                     Align(
                       alignment: AlignmentDirectional(-0.94, -0.13),
                       child: Container(
@@ -241,7 +241,8 @@ class _NaturkatastrophenMentalHealthWidgetState
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   setState(() {
-                                    FFAppState().showContainer1 = false;
+                                    FFAppState().showNaturkatastrophenMental =
+                                        false;
                                   });
                                 },
                                 text: 'Hide',
@@ -271,51 +272,53 @@ class _NaturkatastrophenMentalHealthWidgetState
                         ),
                       ),
                     ),
-                  Align(
-                    alignment: AlignmentDirectional(0.37, 0.79),
-                    child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        setState(() {
-                          FFAppState().showContainer1 = true;
-                        });
-                      },
-                      child: Container(
-                        width: 150.0,
-                        height: 150.0,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF0865AD),
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            width: 2.0,
+                  if (!FFAppState().showNaturkatastrophenMental)
+                    Align(
+                      alignment: AlignmentDirectional(0.37, 0.79),
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          setState(() {
+                            FFAppState().showNaturkatastrophenMental = true;
+                          });
+                        },
+                        child: Container(
+                          width: 150.0,
+                          height: 150.0,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF0865AD),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              width: 2.0,
+                            ),
                           ),
-                        ),
-                        child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            'Mehr Lesen',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Poppins',
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBtnText,
-                                  fontSize: 22.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
+                          child: Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Text(
+                              'Mehr Lesen',
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBtnText,
+                                    fontSize: 22.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
                 ],
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(0.97, -0.07),
                   child: Container(
@@ -355,7 +358,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                   ),
                 ),
               ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(0.96, -0.98),
                   child: Container(
@@ -383,7 +386,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(0.75, -0.35),
                   child: Container(
@@ -411,7 +414,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(0.97, 0.25),
                   child: Container(
@@ -439,7 +442,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(-0.78, 0.18),
                   child: Container(
@@ -467,7 +470,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showNaturkatastrophenMental)
                 Align(
                   alignment: AlignmentDirectional(-0.97, -0.94),
                   child: Container(

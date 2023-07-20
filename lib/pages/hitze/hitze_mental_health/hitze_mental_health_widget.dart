@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -80,15 +81,15 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                 alignment: AlignmentDirectional(-0.95, -0.92),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://katharina-stenger.de/wp-content/uploads/2022/07/Bildschirmfoto-2022-07-18-um-11.31.13.png',
+                  child: Image.asset(
+                    'assets/images/Hitze_Mental_Health_pic.png',
                     width: MediaQuery.sizeOf(context).width * 0.6,
                     height: MediaQuery.sizeOf(context).height * 0.35,
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showHitzeMental)
                 Align(
                   alignment: AlignmentDirectional(-0.96, 0.3),
                   child: Container(
@@ -104,9 +105,9 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 20.0, 0.0),
-                            child: Text(
-                              'Hitze begünstigt Entzündungen im Nervengewebe, was Depressionen, Angststörungen, Psychosen und auch kognitive Beeinträchtigungen begünstigen kann.\n\nEin weiterer Punkt, über den Hitze zu psychischen Belastungen führen kann, ist verminderter Schlaf. Gerade, wenn es nachts nicht abkühlt, können Schlafstörungen die Folge sein. Schlafmangel begünstigt Reizbarkeit, Frustration und unangenehme Emotionen und kann mit fast allen psychischen Störungen in Verbindung gebracht werden, wie Depressionen, affektive Störungen, Angststörungen, Suchtkrankheiten, Schizophrenie oder Demenz.',
-                              textAlign: TextAlign.justify,
+                            child: AutoSizeText(
+                              'Hitze begünstigt Entzündungen im Nervengewebe, was Depressionen, Angststörungen, Psychosen und auch kognitive Beeinträchtigungen begünstigen kann.\n\nEin weiterer Punkt, über den Hitze zu psychischen Belastungen führen kann, ist verminderter Schlaf. Gerade, wenn es nachts nicht abkühlt, können Schlafstörungen die Folge sein. Schlafmangel begünstigt Reizbarkeit, Frustration und unangenehme Emotionen und kann mit fast allen psychischen Störungen in Verbindung gebracht werden, wie Depressionen, affektive Störungen, Angststörungen, Suchtkrankheiten, Schizophrenie oder Demenz.\n\nQuelle: Zhang, Shuo; Braithwaite, Isobel; Bhavsar, Vishal; Das-Munshi, Jayati-Unequal effects of climate change and pre-existing inequalities on the mental health of global populations',
+                              textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -118,11 +119,11 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-0.49, 0.83),
+                          alignment: AlignmentDirectional(-0.99, 1.33),
                           child: FFButtonWidget(
                             onPressed: () async {
                               setState(() {
-                                FFAppState().showContainer1 = false;
+                                FFAppState().showHitzeMental = false;
                               });
                             },
                             text: 'Hide',
@@ -152,7 +153,7 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHitzeMental)
                 Align(
                   alignment: AlignmentDirectional(0.93, -0.96),
                   child: Container(
@@ -180,7 +181,7 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHitzeMental)
                 Align(
                   alignment: AlignmentDirectional(0.92, -0.38),
                   child: Container(
@@ -208,7 +209,7 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHitzeMental)
                 Align(
                   alignment: AlignmentDirectional(0.98, 0.11),
                   child: Container(
@@ -236,7 +237,7 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHitzeMental)
                 Align(
                   alignment: AlignmentDirectional(0.71, 0.49),
                   child: Container(
@@ -264,46 +265,49 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                     ),
                   ),
                 ),
-              Align(
-                alignment: AlignmentDirectional(0.96, 0.57),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    setState(() {
-                      FFAppState().showContainer1 = true;
-                    });
-                  },
-                  child: Container(
-                    width: 150.0,
-                    height: 150.0,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF0865AD),
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: FlutterFlowTheme.of(context).primaryBtnText,
-                        width: 3.0,
+              if (!FFAppState().showHitzeMental)
+                Align(
+                  alignment: AlignmentDirectional(0.96, 0.57),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      setState(() {
+                        FFAppState().showHitzeMental = true;
+                      });
+                    },
+                    child: Container(
+                      width: 150.0,
+                      height: 150.0,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF0865AD),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                          width: 3.0,
+                        ),
                       ),
-                    ),
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Text(
-                        'Mehr Lesen',
-                        textAlign: TextAlign.center,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Poppins',
-                              color:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.w600,
-                            ),
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          'Mehr Lesen',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
               Align(
                 alignment: AlignmentDirectional(0.0, 0.0),
                 child: Column(

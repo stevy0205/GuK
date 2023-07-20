@@ -199,10 +199,10 @@ class _NaturkatastrophenTiereWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.64, -0.81),
+                alignment: AlignmentDirectional(-0.75, -0.81),
                 child: Container(
-                  width: 1451.0,
-                  height: 959.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.45,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
@@ -212,62 +212,90 @@ class _NaturkatastrophenTiereWidgetState
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
+                          fontSize: 34.0,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.97, 0.34),
+                alignment: AlignmentDirectional(0.9, 0.34),
                 child: Container(
-                  width: 1736.0,
-                  height: 461.0,
+                  width: MediaQuery.sizeOf(context).width * 0.45,
+                  height: MediaQuery.sizeOf(context).height * 0.22,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Insgesamt fast DREI Milliarden \nTiere starben oder wurden aus \nihren Lebensraum vertrieben !! ',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Insgesamt fast DREI Milliarden \nTiere starben oder wurden aus \nihren Lebensraum vertrieben !! ',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(-0.75, 0.3),
                 child: Container(
-                  width: 1736.0,
-                  height: 307.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.15,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'verheerendste Buschbrände \nin Australien ',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'verheerendste Buschbrände \nin Australien ',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 35.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.82, -0.7),
+                alignment: AlignmentDirectional(0.82, -0.8),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/7de1fbe5f2166d6dd9fe71c21b2f127275d4e86c.jpg',
-                    width: 1429.0,
-                    height: 798.0,
+                    width: MediaQuery.sizeOf(context).width * 0.4,
+                    height: MediaQuery.sizeOf(context).height * 0.4,
                     fit: BoxFit.fill,
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.7, -0.95),
+                child: Text(
+                  'https://www.zingst.de/veranstaltungen/matthew-abbott-black-summer',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.75, 0.45),
+                child: Text(
+                  'https://www.wwf.de/themen-projekte/bedrohte-tier-und-pflanzenarten/koala/verbranntes-land-viele-arten-bedroht#',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 9.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

@@ -130,13 +130,16 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/bb096_.gif',
-                            width: MediaQuery.sizeOf(context).width * 0.2,
-                            height: MediaQuery.sizeOf(context).height * 0.25,
-                            fit: BoxFit.cover,
+                        Align(
+                          alignment: AlignmentDirectional(0.0, 0.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: Image.asset(
+                              'assets/images/bb096_.gif',
+                              width: MediaQuery.sizeOf(context).width * 0.2,
+                              height: MediaQuery.sizeOf(context).height * 0.25,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Align(
@@ -206,9 +209,18 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                         ),
                       ],
                     ),
+                    Text(
+                      'https://m.focus.de/familie/eltern/durchschnittlich-sechs-tage-kuerzer-verkuerzte-schwangerschaften-kinder-kommen-wegen-klimawandel-frueher-zur-welt_id_11415368.html',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 13.0,
+                            fontStyle: FontStyle.italic,
+                          ),
+                    ),
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(-1.0, 0.9),
+                        alignment: AlignmentDirectional(-1.0, 0.4),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

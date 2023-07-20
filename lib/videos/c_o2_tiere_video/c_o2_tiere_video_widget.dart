@@ -105,7 +105,7 @@ class _CO2TiereVideoWidgetState extends State<CO2TiereVideoWidget> {
           child: Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: FlutterFlowVideoPlayer(
-              path: 'assets/videos/CO2TiereVideo.mp4',
+              path: 'assets/videos/WhatsApp_Video_2023-07-19_at_08.35.34.mp4',
               videoType: VideoType.asset,
               autoPlay: false,
               looping: false,

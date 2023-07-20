@@ -196,7 +196,7 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                   ),
                 ),
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showHizeLebensmittel)
                 Align(
                   alignment: AlignmentDirectional(0.98, 0.03),
                   child: Container(
@@ -228,11 +228,11 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.71, 0.91),
+                            alignment: AlignmentDirectional(0.71, 1.0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 setState(() {
-                                  FFAppState().showContainer1 = false;
+                                  FFAppState().showHizeLebensmittel = false;
                                 });
                               },
                               text: 'Hide',
@@ -274,7 +274,7 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                   ),
                 ),
               ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHizeLebensmittel)
                 Align(
                   alignment: AlignmentDirectional(-0.77, 0.19),
                   child: Container(
@@ -313,47 +313,50 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                   ),
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(0.35, 0.66),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    setState(() {
-                      FFAppState().showContainer1 = true;
-                    });
-                  },
-                  child: Container(
-                    width: 150.0,
-                    height: 150.0,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF0865AD),
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: FlutterFlowTheme.of(context).primaryBtnText,
-                        width: 5.0,
+              if (!FFAppState().showHizeLebensmittel)
+                Align(
+                  alignment: AlignmentDirectional(0.35, 0.66),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      setState(() {
+                        FFAppState().showHizeLebensmittel = true;
+                      });
+                    },
+                    child: Container(
+                      width: 150.0,
+                      height: 150.0,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF0865AD),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                          width: 5.0,
+                        ),
                       ),
-                    ),
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Text(
-                        'Mehr Lesen',
-                        textAlign: TextAlign.center,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Poppins',
-                              color:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.w600,
-                            ),
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          'Mehr Lesen',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHizeLebensmittel)
                 Align(
                   alignment: AlignmentDirectional(-0.24, -0.65),
                   child: Container(
@@ -381,9 +384,9 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHizeLebensmittel)
                 Align(
-                  alignment: AlignmentDirectional(0.43, -0.57),
+                  alignment: AlignmentDirectional(0.33, -0.87),
                   child: Container(
                     width: 250.0,
                     height: 250.0,

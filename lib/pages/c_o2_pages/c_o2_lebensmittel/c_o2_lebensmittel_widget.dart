@@ -65,20 +65,23 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
               Align(
                 alignment: AlignmentDirectional(-0.9, -0.6),
                 child: Container(
-                  width: 1690.0,
-                  height: 1734.0,
+                  width: MediaQuery.sizeOf(context).width * 0.5,
+                  height: MediaQuery.sizeOf(context).height * 0.8,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'CO2 für mehr Ernteerträge ???\n\n+ Steigert die Photosynthese und damit auch den Ertrag\n\n     ABER\n\n- Düngeeffekt von CO2 durch Erderwärmung wettgemacht\n\nZUDEM\n\nWeniger Nährstoffe durch erhöhte CO2 Konzentration\n',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 80.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'CO2 für mehr Ernteerträge ???\n\n+ Steigert die Photosynthese und damit auch den Ertrag\n\n     ABER\n\n- Düngeeffekt von CO2 durch Erderwärmung wettgemacht\n\nZUDEM\n\nWeniger Nährstoffe durch erhöhte CO2 Konzentration\n',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -212,8 +215,8 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/Kohlenstoffdioxidsattigung.png',
-                    width: 1695.0,
-                    height: 1050.0,
+                    width: MediaQuery.sizeOf(context).width * 0.4,
+                    height: MediaQuery.sizeOf(context).height * 0.4,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -230,8 +233,8 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
               Align(
                 alignment: AlignmentDirectional(0.91, -0.9),
                 child: Container(
-                  width: 1690.0,
-                  height: 522.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.3,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
@@ -241,10 +244,21 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 80.0,
+                          fontSize: 30.0,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.89, -0.98),
+                child: Text(
+                  'https://www.klimafakten.de/behauptungen/behauptung-co2-ist-ein-pflanzenduenger-und-kein-schadstoff',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

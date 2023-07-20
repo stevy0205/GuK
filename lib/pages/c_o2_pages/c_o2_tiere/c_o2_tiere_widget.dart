@@ -187,10 +187,10 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.96, 0.61),
+                alignment: AlignmentDirectional(0.96, 0.71),
                 child: Container(
-                  width: 1846.0,
-                  height: 139.0,
+                  width: MediaQuery.sizeOf(context).width * 0.482,
+                  height: MediaQuery.sizeOf(context).height * 0.09,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
@@ -200,14 +200,14 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 70.0,
+                          fontSize: 25.0,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.1),
+                alignment: AlignmentDirectional(-0.2, 1.1),
                 child: Image.asset(
                   'assets/images/ezgif.com-gif-maker_(5).gif',
                   width: MediaQuery.sizeOf(context).width * 0.18,
@@ -228,42 +228,59 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.96, -0.79),
+                alignment: AlignmentDirectional(0.84, -0.89),
                 child: Container(
-                  width: 1850.0,
-                  height: 139.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Die Ozeane werden sauer!!',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 90.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Die Ozeane werden sauer!!',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(-0.89, -0.56),
                 child: Container(
-                  width: 1770.0,
-                  height: 1395.0,
+                  width: MediaQuery.sizeOf(context).width * 0.45,
+                  height: MediaQuery.sizeOf(context).height * 0.6,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    '            Versauerung der Ozeane\n\n   - Artensterben in den Ozeanen\n   - Fische, Amphibien und \n       wirbellose Tiere \n   - Schädigungen \n        - der Kiemen \n        - im Fortpflanzungsverhalten \n   - TOD',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 100.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      '            Versauerung der Ozeane\n\n   - Artensterben in den Ozeanen\n   - Fische, Amphibien und \n       wirbellose Tiere \n   - Schädigungen \n        - der Kiemen \n        - im Fortpflanzungsverhalten \n   - TOD',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.75, -0.58),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/1299075/umfrage/globaler-ph-wert-ozean/#',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

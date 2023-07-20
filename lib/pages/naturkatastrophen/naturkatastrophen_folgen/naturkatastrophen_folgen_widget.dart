@@ -78,8 +78,8 @@ class _NaturkatastrophenFolgenWidgetState
                               0.0, 20.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
-                            child: Image.network(
-                              'https://www.oscar-am-freitag.de/wp-content/uploads/2020/10/23191.jpg',
+                            child: Image.asset(
+                              'assets/images/N_Folgen_pic.jpg',
                               width: MediaQuery.sizeOf(context).width * 0.5,
                               height: MediaQuery.sizeOf(context).height * 0.8,
                               fit: BoxFit.fill,

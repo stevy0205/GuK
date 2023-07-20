@@ -73,7 +73,7 @@ class _AbfallmanagementReuseWidgetState
                       children: [
                         Expanded(
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.75),
+                            alignment: AlignmentDirectional(-1.0, 0.85),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -215,7 +215,7 @@ class _AbfallmanagementReuseWidgetState
                               .override(
                                 fontFamily: 'Poppins',
                                 color: Colors.white,
-                                fontSize: 22.0,
+                                fontSize: 20.0,
                               ),
                         ),
                       ),

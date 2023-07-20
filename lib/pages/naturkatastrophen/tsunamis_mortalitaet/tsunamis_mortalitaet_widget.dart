@@ -219,14 +219,14 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(-0.89, -0.54),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
                       'Der Tödlichster Tsunami, führte zu 225.000 Todesopfern \nin 14 Ländern\nausgelöst durch ein Erdbeben \nder Stärke 9,2\n',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 100.0,
+                            fontSize: 35.0,
                             fontWeight: FontWeight.w600,
                           ),
                     ),
@@ -242,14 +242,14 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(-0.86, 0.67),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Erdbeben und Tsunamis sind für \nca. 66 % der heftigsten \nNaturkatastrophen verantwortlich\n',
+                      'Erdbeben und Tsunamis sind \nfür ca. 66 % der heftigsten \nNaturkatastrophen verantwortlich\n',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 100.0,
+                            fontSize: 35.0,
                             fontWeight: FontWeight.w600,
                           ),
                     ),
@@ -272,11 +272,33 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 110.0,
+                            fontSize: 35.0,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.87, -0.91),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/1227385/umfrage/groessten-tsunamis-nach-auflaufhoehe/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.81, -0.9),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/156963/umfrage/naturkatastrophen-nach-todesopfern-seit-1980/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

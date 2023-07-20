@@ -229,8 +229,8 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
               Align(
                 alignment: AlignmentDirectional(0.84, 0.07),
                 child: Container(
-                  width: 1639.0,
-                  height: 1233.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.4,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
@@ -241,7 +241,7 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 100.0,
+                            fontSize: 26.0,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
@@ -254,8 +254,8 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/pngwing.com-2.png',
-                    width: 645.0,
-                    height: 687.0,
+                    width: MediaQuery.sizeOf(context).width * 0.3,
+                    height: MediaQuery.sizeOf(context).height * 0.4,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -263,8 +263,8 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
               Align(
                 alignment: AlignmentDirectional(-0.78, 0.06),
                 child: Container(
-                  width: 1503.0,
-                  height: 1233.0,
+                  width: MediaQuery.sizeOf(context).width * 0.4,
+                  height: MediaQuery.sizeOf(context).height * 0.4,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
@@ -275,7 +275,7 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 100.0,
+                            fontSize: 26.0,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
@@ -283,15 +283,27 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(1.02, -1.23),
+                alignment: AlignmentDirectional(0.72, -1.13),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/kisspng-rain-cloud-clip-art-rain-cloud-5adc6f720cdce7.4385181615243958900527.png',
-                    width: 927.0,
-                    height: 927.0,
+                    width: MediaQuery.sizeOf(context).width * 0.25,
+                    height: MediaQuery.sizeOf(context).height * 0.4,
                     fit: BoxFit.fill,
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.76, 0.54),
+                child: Text(
+                  'https://www.mendeley.com/reference-manager/library/collections/6126560c-7bd0\n-4c7c-b0c5-ee943e93e2d4/all-references/',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

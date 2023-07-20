@@ -202,6 +202,7 @@ class _QuizMentalWidgetState extends State<QuizMentalWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
+                                                fontSize: 42.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
@@ -278,6 +279,7 @@ class _QuizMentalWidgetState extends State<QuizMentalWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -354,6 +356,7 @@ class _QuizMentalWidgetState extends State<QuizMentalWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -438,6 +441,7 @@ class _QuizMentalWidgetState extends State<QuizMentalWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -509,6 +513,7 @@ class _QuizMentalWidgetState extends State<QuizMentalWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,

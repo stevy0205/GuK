@@ -199,15 +199,18 @@ class _NaturkatastrophenMortalittWidgetState
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: AutoSizeText(
-                    '  80% der Schwerwiegendsten \nNaturkatastrophen, waren alle \nin den letzten 15 Jahren',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 90.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: AutoSizeText(
+                      '  80% der Schwerwiegendsten \nNaturkatastrophen, waren alle \nin den letzten 15 Jahren',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -219,17 +222,8 @@ class _NaturkatastrophenMortalittWidgetState
                     'assets/images/Naturkatastrophen-Mortalitat.png',
                     width: MediaQuery.sizeOf(context).width * 0.5,
                     height: MediaQuery.sizeOf(context).height * 0.6,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.0, 1.1),
-                child: Image.asset(
-                  'assets/images/ezgif.com-gif-maker_(5).gif',
-                  width: MediaQuery.sizeOf(context).width * 0.187,
-                  height: MediaQuery.sizeOf(context).height * 0.338,
-                  fit: BoxFit.cover,
                 ),
               ),
               Align(
@@ -246,10 +240,30 @@ class _NaturkatastrophenMortalittWidgetState
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 120.0,
+                          fontSize: 45.0,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.3, 1.1),
+                child: Image.asset(
+                  'assets/images/ezgif.com-gif-maker_(5).gif',
+                  width: MediaQuery.sizeOf(context).width * 0.187,
+                  height: MediaQuery.sizeOf(context).height * 0.338,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.82, -0.99),
+                child: Text(
+                  'https://de.statista.com/statistik/daten/studie/156963/umfrage/naturkatastrophen-nach-todesopfern-seit-1980/',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],

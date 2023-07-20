@@ -201,6 +201,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
+                                                fontSize: 42.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
@@ -276,6 +277,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -351,6 +353,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -409,7 +412,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                     ParamType.String,
                                                   ),
                                                   'score': serializeParam(
-                                                    0,
+                                                    widget.score,
                                                     ParamType.int,
                                                   ),
                                                 }.withoutNulls,
@@ -434,6 +437,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,
@@ -504,6 +508,7 @@ class _QuizKHGWWidgetState extends State<QuizKHGWWidget>
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
+                                                        fontSize: 42.0,
                                                       ),
                                               borderSide: BorderSide(
                                                 color: Colors.transparent,

@@ -108,6 +108,7 @@ class _AntwortTiereWidgetState extends State<AntwortTiereWidget> {
                                           fontFamily: 'Poppins',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBtnText,
+                                          fontSize: 42.0,
                                         ),
                                   ),
                                 ],
@@ -148,7 +149,12 @@ class _AntwortTiereWidgetState extends State<AntwortTiereWidget> {
                                           'Ergebniss',
                                           queryParameters: {
                                             'score': serializeParam(
-                                              widget.score,
+                                              functions.countScore(
+                                                  widget.answer!,
+                                                  containerFragenTiereRecordList[
+                                                          widget.index]
+                                                      .richtig,
+                                                  widget.score),
                                               ParamType.int,
                                             ),
                                           }.withoutNulls,
@@ -220,7 +226,14 @@ class _AntwortTiereWidgetState extends State<AntwortTiereWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .displayMedium,
+                                                      .displayMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                      ),
                                             ),
                                           ),
                                         ),
@@ -241,7 +254,14 @@ class _AntwortTiereWidgetState extends State<AntwortTiereWidget> {
                                                     widget.index]
                                                 .richtig,
                                             style: FlutterFlowTheme.of(context)
-                                                .displayLarge,
+                                                .displayLarge
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBtnText,
+                                                  fontSize: 42.0,
+                                                ),
                                           ),
                                         ),
                                       ),

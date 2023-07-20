@@ -69,49 +69,51 @@ class _NaturkatastrophenInfektionenWidgetState
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Align(
-                      alignment: AlignmentDirectional(0.94, 0.45),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          setState(() {
-                            FFAppState().showContainer1 = true;
-                          });
-                        },
-                        child: Container(
-                          width: 150.0,
-                          height: 150.0,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF0865AD),
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
-                              width: 2.0,
+                    if (!FFAppState().showNaturkatastrophenInfektionen)
+                      Align(
+                        alignment: AlignmentDirectional(0.94, 0.45),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            setState(() {
+                              FFAppState().showNaturkatastrophenInfektionen =
+                                  true;
+                            });
+                          },
+                          child: Container(
+                            width: 150.0,
+                            height: 150.0,
+                            decoration: BoxDecoration(
+                              color: Color(0xFF0865AD),
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                width: 2.0,
+                              ),
                             ),
-                          ),
-                          child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Text(
-                              'Mehr Lesen',
-                              textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBtnText,
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                            child: Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Text(
+                                'Mehr Lesen',
+                                textAlign: TextAlign.center,
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBtnText,
+                                      fontSize: 22.0,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
                     Expanded(
                       child: Align(
                         alignment: AlignmentDirectional(-1.0, 0.9),
@@ -253,7 +255,7 @@ class _NaturkatastrophenInfektionenWidgetState
                   ),
                 ),
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showNaturkatastrophenInfektionen)
                 Align(
                   alignment: AlignmentDirectional(-0.41, -0.02),
                   child: Padding(
@@ -276,8 +278,8 @@ class _NaturkatastrophenInfektionenWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 20.0, 0.0),
                                 child: Text(
-                                  'Mit dem steigenden Wasserpegel durch bspw.: verstärkte Regenfälle wird auch das Infektionsrisiko in Hochwassergebieten höher: Verschiedene Bakterien und Keime aber auch Giftstoffe können ins Grundwasser gelangen und Badeseen sowie Trinkwasser nachhaltig verunreinigen.\nDiese gesundheitlichen Gefahren steigen mit der Flut:\n-Magen-Darm-Erkrankungen\n-Infektionsrisiko mit Hepatitis A\n-Tetanus',
-                                  textAlign: TextAlign.justify,
+                                  'Mit dem steigenden Wasserpegel durch bspw.: verstärkte Regenfälle wird auch das Infektionsrisiko in Hochwassergebieten höher: Verschiedene Bakterien und Keime aber auch Giftstoffe können ins Grundwasser gelangen und Badeseen sowie Trinkwasser nachhaltig verunreinigen.\nDiese gesundheitlichen Gefahren steigen mit der Flut:\nMagen-Darm-Erkrankungen\nInfektionsrisiko mit Hepatitis A\nTetanus',
+                                  textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -289,11 +291,13 @@ class _NaturkatastrophenInfektionenWidgetState
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.91, 0.85),
+                              alignment: AlignmentDirectional(0.91, 0.95),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   setState(() {
-                                    FFAppState().showContainer1 = false;
+                                    FFAppState()
+                                            .showNaturkatastrophenInfektionen =
+                                        false;
                                   });
                                 },
                                 text: 'Hide',
@@ -481,7 +485,7 @@ class _NaturkatastrophenInfektionenWidgetState
                   ),
                 ),
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showNaturkatastrophenInfektionen)
                 Align(
                   alignment: AlignmentDirectional(0.35, -0.05),
                   child: Padding(
@@ -501,8 +505,8 @@ class _NaturkatastrophenInfektionenWidgetState
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
-                                'Die Auswirkungen von Überschwemmungen auf diejenigen, die sie erleben, können erheblich sein. Überflutungen von Kläranlagen und Trinkwasserbrunnen können zur Verunreinigung der Trinkwasserressourcen mit Krankheitserregern aus Ausscheidungen führen. Das Hochwasser selbst kann bereits verstärkt mit Krankheitserregern belastet sein, wodurch ebenfalls das Risiko für Infektionserkrankungen ansteigt.',
-                                textAlign: TextAlign.justify,
+                                'Die Auswirkungen von Überschwemmungen auf diejenigen, die sie erleben, können erheblich sein. Überflutungen von Kläranlagen und Trinkwasserbrunnen können zur Verunreinigung der Trinkwasserressourcen mit Krankheitserregern aus Ausscheidungen führen. Das Hochwasser selbst kann bereits verstärkt mit Krankheitserregern belastet sein, wodurch ebenfalls das Risiko für Infektionserkrankungen ansteigt.\nQuelle: Flooding and Mental Health',
+                                textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(

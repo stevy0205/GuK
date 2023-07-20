@@ -2,7 +2,7 @@
 export '/pages/quiz/quizzes/quiz_hitze/quiz_hitze_widget.dart'
     show QuizHitzeWidget;
 export '/pages/home/home_widget.dart' show HomeWidget;
-export '/pages/memory/memory_widget.dart' show MemoryWidget;
+export '/pages/hitze/memory/memory_widget.dart' show MemoryWidget;
 export '/pages/klima_overview/klima_overview_widget.dart'
     show KlimaOverviewWidget;
 export '/pages/hitze/hitze_geburtenrate/hitze_geburtenrate_widget.dart'

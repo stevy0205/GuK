@@ -111,6 +111,7 @@ class _AntwortNaturkatastropenWidgetState
                                           fontFamily: 'Poppins',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBtnText,
+                                          fontSize: 42.0,
                                         ),
                                   ),
                                 ],
@@ -151,7 +152,12 @@ class _AntwortNaturkatastropenWidgetState
                                           'Ergebniss',
                                           queryParameters: {
                                             'score': serializeParam(
-                                              widget.score,
+                                              functions.countScore(
+                                                  widget.answer!,
+                                                  containerFragenNaturkatastrophenRecordList[
+                                                          widget.index]
+                                                      .richtig,
+                                                  widget.score),
                                               ParamType.int,
                                             ),
                                           }.withoutNulls,
@@ -251,7 +257,14 @@ class _AntwortNaturkatastropenWidgetState
                                                     widget.index]
                                                 .richtig,
                                             style: FlutterFlowTheme.of(context)
-                                                .displayLarge,
+                                                .displayLarge
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBtnText,
+                                                  fontSize: 42.0,
+                                                ),
                                           ),
                                         ),
                                       ),

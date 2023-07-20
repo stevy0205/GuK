@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -78,8 +79,8 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                 alignment: AlignmentDirectional(-0.92, -0.75),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://bilder.bild.de/fotos-skaliert/gesundheitsgefahr-bei-hitze-hitzekollaps-oder-hitzschlag--infografik-62713124/27,w=1512,q=low,c=0.bild.gif',
+                  child: Image.asset(
+                    'assets/images/Hitze_Generell_Pic.gif',
                     width: 524.0,
                     fit: BoxFit.cover,
                   ),
@@ -198,7 +199,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                   ),
                 ),
               ),
-              if (FFAppState().showContainer1)
+              if (FFAppState().showHitzeGenerell)
                 Align(
                   alignment: AlignmentDirectional(0.96, -0.86),
                   child: Container(
@@ -217,8 +218,8 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 20.0, 20.0, 20.0),
-                              child: Text(
-                                'Der Klimawandel hat zu einer signifikanten Zunahme von Hitzeereignissen geführt. Hitzewellen sind häufiger und intensiver geworden, während städtische Gebiete aufgrund von hohen Versiegelungsraten als Hitzeinseln fungieren. Diese Veränderungen haben schwerwiegende Auswirkungen auf die Landwirtschaft, da Pflanzen einem erhöhten Hitzestress ausgesetzt sind und Ernteerträge abnehmen. Zudem gefährdet die Hitze die menschliche Gesundheit, insbesondere bei vulnerablen Bevölkerungsgruppen. Um die Auswirkungen einzudämmen, sind umfassende Maßnahmen zur Reduzierung von Treibhausgasemissionen und zur Anpassung der Infrastruktur erforderlich. Zeitnahe und effektive Handlungen sind unerlässlich, um die Folgen der Hitze durch den Klimawandel zu mildern.',
+                              child: AutoSizeText(
+                                'Der Klimawandel hat zu einer signifikanten Zunahme von Hitzeereignissen geführt. Hitzewellen sind häufiger und intensiver geworden, während städtische Gebiete aufgrund von hohen Versiegelungsraten als Hitzeinseln fungieren. Diese Veränderungen haben schwerwiegende Auswirkungen auf die Landwirtschaft, da Pflanzen einem erhöhten Hitzestress ausgesetzt sind und Ernteerträge abnehmen. Zudem gefährdet die Hitze die menschliche Gesundheit, insbesondere bei vulnerablen Bevölkerungsgruppen. Um die Auswirkungen einzudämmen, sind umfassende Maßnahmen zur Reduzierung von Treibhausgasemissionen und zur Anpassung der Infrastruktur erforderlich. Zeitnahe und effektive Handlungen sind unerlässlich, um die Folgen der Hitze durch den Klimawandel zu mildern.\nQuelle: Bouchama, Abderrezak-Prognostic Factors in Heat Wave–Related DeathsA Meta-analysis',
                                 textAlign: TextAlign.justify,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -231,14 +232,14 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.91, 0.85),
+                            alignment: AlignmentDirectional(0.91, 1.1),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 20.0, 20.0, 20.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   setState(() {
-                                    FFAppState().showContainer1 = false;
+                                    FFAppState().showHitzeGenerell = false;
                                   });
                                 },
                                 text: 'Hide',
@@ -270,7 +271,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                     ),
                   ),
                 ),
-              if (!FFAppState().showContainer1)
+              if (!FFAppState().showHitzeGenerell)
                 Align(
                   alignment: AlignmentDirectional(0.62, 0.14),
                   child: Padding(
@@ -309,147 +310,155 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                     ),
                   ),
                 ),
-              Align(
-                alignment: AlignmentDirectional(0.94, 0.45),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    setState(() {
-                      FFAppState().showContainer1 = true;
-                    });
-                  },
-                  child: Container(
-                    width: 150.0,
-                    height: 150.0,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF0865AD),
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: FlutterFlowTheme.of(context).primaryBtnText,
-                        width: 2.0,
+              if (!FFAppState().showHitzeGenerell)
+                Align(
+                  alignment: AlignmentDirectional(0.94, 0.55),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      setState(() {
+                        FFAppState().showHitzeGenerell = true;
+                      });
+                    },
+                    child: Container(
+                      width: 150.0,
+                      height: 150.0,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF0865AD),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                          width: 2.0,
+                        ),
                       ),
-                    ),
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Text(
-                        'Mehr Lesen',
-                        textAlign: TextAlign.center,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Poppins',
-                              color:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.w600,
-                            ),
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          'Mehr Lesen',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(580.0, 0.0, 0.0, 0.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        if (!FFAppState().showContainer1)
-                          Align(
-                            alignment: AlignmentDirectional(0.01, -0.84),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 40.0, 0.0, 20.0),
-                              child: Container(
-                                width: 200.0,
-                                height: 200.0,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF0865AD),
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: FlutterFlowTheme.of(context).warning,
-                                    width: 5.0,
+              Align(
+                alignment: AlignmentDirectional(0.91, 0.95),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(580.0, 0.0, 0.0, 0.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          if (!FFAppState().showHitzeGenerell)
+                            Align(
+                              alignment: AlignmentDirectional(0.01, -0.84),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 40.0, 0.0, 20.0),
+                                child: Container(
+                                  width: 200.0,
+                                  height: 200.0,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF0865AD),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color:
+                                          FlutterFlowTheme.of(context).warning,
+                                      width: 5.0,
+                                    ),
                                   ),
-                                ),
-                                child: Visibility(
-                                  visible: !FFAppState().showContainer1,
-                                  child: Align(
-                                    alignment: AlignmentDirectional(0.0, -0.74),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 70.0, 20.0, 0.0),
-                                      child: Text(
-                                        'Hitzestress',
-                                        textAlign: TextAlign.justify,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBtnText,
-                                              fontSize: 20.0,
-                                            ),
+                                  child: Visibility(
+                                    visible: !FFAppState().showContainer1,
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.0, -0.74),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            20.0, 70.0, 20.0, 0.0),
+                                        child: Text(
+                                          'Hitzestress',
+                                          textAlign: TextAlign.justify,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBtnText,
+                                                fontSize: 20.0,
+                                              ),
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        if (!FFAppState().showContainer1)
-                          Align(
-                            alignment: AlignmentDirectional(0.02, -0.05),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  50.0, 50.0, 80.0, 70.0),
-                              child: Container(
-                                width: 250.0,
-                                height: 250.0,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF0865AD),
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).tertiary,
-                                    width: 5.0,
+                          if (!FFAppState().showHitzeGenerell)
+                            Align(
+                              alignment: AlignmentDirectional(0.02, -0.05),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    50.0, 50.0, 80.0, 70.0),
+                                child: Container(
+                                  width: 250.0,
+                                  height: 250.0,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF0865AD),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
+                                      width: 5.0,
+                                    ),
                                   ),
-                                ),
-                                child: Visibility(
-                                  visible: !FFAppState().showContainer1,
-                                  child: Align(
-                                    alignment:
-                                        AlignmentDirectional(0.02, -0.06),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 0.0, 20.0, 0.0),
-                                      child: Text(
-                                        'Hitzeinseln',
-                                        textAlign: TextAlign.justify,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBtnText,
-                                              fontSize: 30.0,
-                                            ),
+                                  child: Visibility(
+                                    visible: !FFAppState().showContainer1,
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.02, -0.06),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            20.0, 0.0, 20.0, 0.0),
+                                        child: Text(
+                                          'Hitzeinseln',
+                                          textAlign: TextAlign.justify,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBtnText,
+                                                fontSize: 30.0,
+                                              ),
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.1),

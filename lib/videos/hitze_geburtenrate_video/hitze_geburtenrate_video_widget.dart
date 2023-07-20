@@ -98,7 +98,7 @@ class _HitzeGeburtenrateVideoWidgetState
           child: Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: FlutterFlowVideoPlayer(
-              path: 'assets/videos/HitzeGeburtenrateVideo.mp4',
+              path: 'assets/videos/WhatsApp_Video_2023-07-19_at_08.37.36.mp4',
               videoType: VideoType.asset,
               autoPlay: false,
               looping: false,

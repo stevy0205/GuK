@@ -81,42 +81,73 @@ class _InhalaGaseTreibhauseffektWidgetState
                               fill: Fill.fillBack,
                               direction: FlipDirection.HORIZONTAL,
                               speed: 400,
-                              front: Align(
-                                alignment: AlignmentDirectional(-1.0, -1.0),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 0.0, 0.0),
-                                  child: Container(
-                                    width:
-                                        MediaQuery.sizeOf(context).width * 0.6,
-                                    height:
-                                        MediaQuery.sizeOf(context).height * 0.5,
-                                    decoration: BoxDecoration(
-                                      color: Color(0xFF0865AD),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.0, -1.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            20.0, 20.0, 20.0, 0.0),
-                                        child: Text(
-                                          'Inhalative Anästhetika als Treibhausgase:              \n\nWie viel ein Treibhausgas zur Erderwärmung über einen bestimmten Zeitraum beiträgt hängt von folgenden Faktoren ab:\n\n- atmosphärische Lebensdauer des Treibhausgases\n\n- Absorptionskraft über die gesamte atmosphärische Lebensdauer\n\n- Wellenlänge, auf der das Treibhausgas absorbiert. Es ist umso potenter, je weniger es in demselben Infrarotspektrum der natürlichen Treibhausgase Wasserdampf und CO2 absorbiert',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryBtnText,
-                                                fontSize: 20.0,
-                                              ),
+                              front: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Align(
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
+                                      child: Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.6,
+                                        height:
+                                            MediaQuery.sizeOf(context).height *
+                                                0.5,
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFF0865AD),
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        child: Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, -1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    20.0, 20.0, 20.0, 0.0),
+                                            child: Text(
+                                              'Inhalative Anästhetika als Treibhausgase:              \n\nWie viel ein Treibhausgas zur Erderwärmung über einen bestimmten Zeitraum beiträgt hängt von folgenden Faktoren ab:\n\n- atmosphärische Lebensdauer des Treibhausgases\n\n- Absorptionskraft über die gesamte atmosphärische Lebensdauer\n\n- Wellenlänge, auf der das Treibhausgas absorbiert. Es ist umso potenter, je weniger es in demselben Infrarotspektrum der natürlichen Treibhausgase Wasserdampf und CO2 absorbiert',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 20.0,
+                                                      ),
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                ),
+                                  Container(
+                                    width: 363.0,
+                                    height: 100.0,
+                                    decoration: BoxDecoration(),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 10.0, 10.0, 10.0),
+                                      child: Text(
+                                        'Quelle: Neue Herausforderungen für die Anästhesie durch den Klimawandel (S. Koch, S. Percher)',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBtnText,
+                                            ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                               back: Container(
                                 width: MediaQuery.sizeOf(context).width * 0.6,

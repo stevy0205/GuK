@@ -109,6 +109,7 @@ class _AntwortMentalWidgetState extends State<AntwortMentalWidget> {
                                           fontFamily: 'Poppins',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBtnText,
+                                          fontSize: 42.0,
                                         ),
                                   ),
                                 ],
@@ -149,7 +150,12 @@ class _AntwortMentalWidgetState extends State<AntwortMentalWidget> {
                                           'Ergebniss',
                                           queryParameters: {
                                             'score': serializeParam(
-                                              widget.score,
+                                              functions.countScore(
+                                                  widget.answer!,
+                                                  containerFragenKlimeMentaleGesundheitRecordList[
+                                                          widget.index]
+                                                      .richtig,
+                                                  widget.score),
                                               ParamType.int,
                                             ),
                                           }.withoutNulls,
@@ -249,7 +255,14 @@ class _AntwortMentalWidgetState extends State<AntwortMentalWidget> {
                                                     widget.index]
                                                 .richtig,
                                             style: FlutterFlowTheme.of(context)
-                                                .displayLarge,
+                                                .displayLarge
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBtnText,
+                                                  fontSize: 42.0,
+                                                ),
                                           ),
                                         ),
                                       ),

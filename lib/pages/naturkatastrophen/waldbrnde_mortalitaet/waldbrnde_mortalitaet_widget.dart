@@ -70,8 +70,20 @@ class _WaldbrndeMortalitaetWidgetState
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/pngegg.png',
-                    width: 2239.0,
-                    height: 2376.0,
+                    width: MediaQuery.sizeOf(context).width * 0.6,
+                    height: MediaQuery.sizeOf(context).height * 0.9,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(1.44, 0.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/kisspng-australia-blank-map-world-map-clip-art-5b1d20c87fded4.1208872415286355925238.png',
+                    width: MediaQuery.sizeOf(context).width * 0.65,
+                    height: MediaQuery.sizeOf(context).height * 0.93,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -203,33 +215,24 @@ class _WaldbrndeMortalitaetWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(1.44, 0.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/kisspng-australia-blank-map-world-map-clip-art-5b1d20c87fded4.1208872415286355925238.png',
-                    width: 2469.0,
-                    height: 2134.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.56, 0.81),
+                alignment: AlignmentDirectional(0.99, 0.62),
                 child: Container(
-                  width: 1346.0,
-                  height: 610.0,
+                  width: MediaQuery.sizeOf(context).width * 0.35,
+                  height: MediaQuery.sizeOf(context).height * 0.27,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Treibhausgase und mikro Partikel, welche bis in die Bronchien gelangen können, haben oft schwerwiegende Folgen.',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 80.0,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Treibhausgase und mikro Partikel, welche bis in die Bronchien gelangen können, haben oft schwerwiegende Folgen.',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 27.0,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -243,6 +246,29 @@ class _WaldbrndeMortalitaetWidgetState
                 ),
               ),
               Align(
+                alignment: AlignmentDirectional(-0.15, -1.0),
+                child: Container(
+                  width: MediaQuery.sizeOf(context).width * 0.23,
+                  height: MediaQuery.sizeOf(context).width * 0.23,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).info,
+                    shape: BoxShape.circle,
+                  ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, -1.0),
+                    child: Text(
+                      '\nGroßer \nEinfluss auf \ndie Menschen \nauf der ganzen \nWelt',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                          ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
                 alignment: AlignmentDirectional(-0.91, -0.28),
                 child: Text(
                   'Pro Jahr, sterben 339.000 \nSubsahara Afrikaner an den Folgen \nvon Waldbränden ',
@@ -250,7 +276,7 @@ class _WaldbrndeMortalitaetWidgetState
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Poppins',
                         color: FlutterFlowTheme.of(context).primaryBtnText,
-                        fontSize: 70.0,
+                        fontSize: 25.0,
                       ),
                 ),
               ),
@@ -262,28 +288,30 @@ class _WaldbrndeMortalitaetWidgetState
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Poppins',
                         color: FlutterFlowTheme.of(context).primaryBtnText,
-                        fontSize: 70.0,
+                        fontSize: 25.0,
                       ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.15, -0.89),
-                child: Container(
-                  width: 847.0,
-                  height: 847.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).info,
-                    shape: BoxShape.circle,
-                  ),
-                  child: Text(
-                    '\nGroßer \nEinfluss auf \ndie Menschen \nauf der ganzen \nWelt',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 80.0,
-                        ),
-                  ),
+                alignment: AlignmentDirectional(-0.59, -0.07),
+                child: Text(
+                  'https://ehp.niehs.nih.gov/doi/10.1289/ehp.1104422',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 13.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.97, -0.13),
+                child: Text(
+                  'https://www.zingst.de/veranstaltungen/matthew-abbott-black-summer',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 11.0,
+                        fontStyle: FontStyle.italic,
+                      ),
                 ),
               ),
             ],
