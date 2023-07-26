@@ -204,6 +204,34 @@ class _KlimaneutralesKrankenhausWidgetState
                                       ),
                                     ),
                                   ),
+                                  FFButtonWidget(
+                                    onPressed: () async {
+                                      context.pushNamed('Quiz_KHGW');
+                                    },
+                                    text: 'Zum Quiz!',
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF0865AD),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.white,
+                                            fontSize: 20.0,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -213,7 +241,7 @@ class _KlimaneutralesKrankenhausWidgetState
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.94, 0.99),
+                    alignment: AlignmentDirectional(0.7, 1.01),
                     child: Image.asset(
                       'assets/images/ezgif.com-gif-maker_(5).gif',
                       width: MediaQuery.sizeOf(context).width * 0.104,
@@ -255,7 +283,7 @@ class _KlimaneutralesKrankenhausWidgetState
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.43, 0.96),
+                    alignment: AlignmentDirectional(0.29, 0.96),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(

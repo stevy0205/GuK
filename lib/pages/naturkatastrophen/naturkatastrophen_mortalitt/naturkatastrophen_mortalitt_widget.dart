@@ -235,7 +235,7 @@ class _NaturkatastrophenMortalittWidgetState
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Text(
-                    '\nIn den vergangenen \n50 Jahren kamen \nmehr als \nzwei Millionen \nMenschen \ndurch \nNaturkatastrophen \nums Leben',
+                    '\nIn den vergangenen \n50 Jahren kamen \nweltweit mehr als \nzwei Millionen \nMenschen \ndurch \nNaturkatastrophen \nums Leben',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',

@@ -1,18 +1,20 @@
-KuG - Anleitung
+# GuK
 
-Voraussetzungen:
-- Auflösung am besten 1920x1080, mindestens 1366x768
+A new Flutter project.
 
-#1
-Die Batchdatei startGuK.bat ausführen. Diese führt einen lokalen Server aus auf welchem die Anwendung dann läuft.
-Nach Ausführen der Batch Datei öffnet sich das Terminal welches die nötigen Befehle ausführt. Bei erfolgreicher Ausführung
-werden die verfügbaren Adressen unten angezeigt.
+## Getting Started
 
-#2
-Sobald der Server gestartet ist wird keine Internetverbindung mehr für die Anwendung benötigt. Sie läuft unter anderem auf http://192.168.56.1:8081/.
+FlutterFlow projects are built to run on the Flutter _stable_ release.
 
-#3 Mit F11 kann die Anwendung in den Vollbildmodus gebracht werden und man kann mit dem spielen und lernen beginnen!
+### Getting started continued:
 
-Viel Spaß beim Lernen!
+This project is a starting point for a Flutter application.
 
-KuG-Team
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

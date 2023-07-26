@@ -207,12 +207,12 @@ class _NaturkatastrophenTiereWidgetState
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Text(
-                    '      Black Summer Statistik\n\n   - 143 Millionen Säugetiere \n   - 2,46 Milliarden Reptilien \n   - 180 Millionen Vögel\n   - 51 Millionen Frösche \n',
+                    '     Black Summer Statistik\n\n   - 143 Millionen Säugetiere \n   - 2,46 Milliarden Reptilien  \n   - 180 Millionen Vögel\n   - 51 Millionen Frösche \n',
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 34.0,
+                          fontSize: 38.0,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
@@ -256,21 +256,21 @@ class _NaturkatastrophenTiereWidgetState
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            color: FlutterFlowTheme.of(context).alternate,
                             fontSize: 35.0,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.82, -0.8),
+                alignment: AlignmentDirectional(0.9, -0.8),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
                     'assets/images/7de1fbe5f2166d6dd9fe71c21b2f127275d4e86c.jpg',
-                    width: MediaQuery.sizeOf(context).width * 0.4,
+                    width: MediaQuery.sizeOf(context).width * 0.45,
                     height: MediaQuery.sizeOf(context).height * 0.4,
                     fit: BoxFit.fill,
                   ),

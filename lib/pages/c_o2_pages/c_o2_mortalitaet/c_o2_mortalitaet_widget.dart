@@ -63,25 +63,6 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(-0.28, 0.56),
-                child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.153,
-                  height: MediaQuery.sizeOf(context).height * 0.17,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).info,
-                  ),
-                  child: Text(
-                    'AQI Score:\n0 = :D\n500 = :(',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 29.0,
-                        ),
-                  ),
-                ),
-              ),
-              Align(
                 alignment: AlignmentDirectional(0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -230,7 +211,7 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.25, -0.6),
+                alignment: AlignmentDirectional(-0.31, 0.36),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -242,10 +223,10 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.92, -0.67),
+                alignment: AlignmentDirectional(-0.87, -0.6),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.23,
-                  height: MediaQuery.sizeOf(context).height * 0.143,
+                  width: MediaQuery.sizeOf(context).width * 0.46,
+                  height: MediaQuery.sizeOf(context).height * 0.12,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
@@ -264,14 +245,14 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.87, 0.62),
+                alignment: AlignmentDirectional(0.87, 0.66),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.418,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Text(
-                    'Todefälle als folge von Luftverschmutzung',
+                    'Todesfälle als Folge von Luftverschmutzung',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Poppins',
@@ -291,6 +272,25 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
                 ),
               ),
               Align(
+                alignment: AlignmentDirectional(-0.33, -0.98),
+                child: Container(
+                  width: MediaQuery.sizeOf(context).width * 0.153,
+                  height: MediaQuery.sizeOf(context).height * 0.17,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).info,
+                  ),
+                  child: Text(
+                    'AQI Score:\n0 = :D\n500 = :(',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Poppins',
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                          fontSize: 29.0,
+                        ),
+                  ),
+                ),
+              ),
+              Align(
                 alignment: AlignmentDirectional(0.84, -0.77),
                 child: Text(
                   'https://de.statista.com/statistik/daten/studie/1246953/umfrage/todesfaelle-in-folge-von-luftverschmutzung\n-in-ausgewaehlten-laendern/',
@@ -303,7 +303,7 @@ class _CO2MortalitaetWidgetState extends State<CO2MortalitaetWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.87, -0.78),
+                alignment: AlignmentDirectional(-0.87, -0.71),
                 child: Text(
                   'https://www.iqair.com/de/world-most-polluted-cities',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(

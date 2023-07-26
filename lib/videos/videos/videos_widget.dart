@@ -260,13 +260,29 @@ class _VideosWidgetState extends State<VideosWidget> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                context.pushNamed('CO2Generell');
+                                context.pushNamed('GameOverview');
                               },
                               child: Container(
                                 width: MediaQuery.sizeOf(context).width * 0.2,
                                 height: MediaQuery.sizeOf(context).height * 0.3,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF6DA6ED),
+                                  color: Color(0xFF0865AD),
+                                ),
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Text(
+                                    'Spiele\n+\nQuiz',
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBtnText,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                  ),
                                 ),
                               ),
                             ),

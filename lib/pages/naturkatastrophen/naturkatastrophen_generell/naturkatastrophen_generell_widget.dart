@@ -225,15 +225,18 @@ class _NaturkatastrophenGenerellWidgetState
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Naturkatastrophen \nin den letzten \n20 Jahren \nVERDOPPELT',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 40.0,
-                          fontWeight: FontWeight.w600,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Naturkatastrophen \nin den letzten \n20 Jahren \nVERDOPPELT',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 40.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -325,6 +328,17 @@ class _NaturkatastrophenGenerellWidgetState
                         fontFamily: 'Poppins',
                         fontSize: 13.0,
                         fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.35, -0.34),
+                child: Text(
+                  'Anzahl der \nNaturkatastrophen weltweit',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
                       ),
                 ),
               ),

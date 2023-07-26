@@ -212,8 +212,8 @@ class _HitzeInfektionenWidgetState extends State<HitzeInfektionenWidget> {
                           alignment: AlignmentDirectional(-0.85, -0.84),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
-                            child: Image.network(
-                              'https://www.ndr.de/ratgeber/klimawandel/muecken252_v-fullhd.jpg',
+                            child: Image.asset(
+                              'assets/images/asiatischeTigermuecke.webp',
                               width: 800.0,
                               fit: BoxFit.cover,
                             ),

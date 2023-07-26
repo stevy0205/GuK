@@ -99,19 +99,17 @@ class _NaturkatastrophenFolgenWidgetState
                         ),
                         child: Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 20.0, 0.0),
-                            child: Text(
-                              'Naturkatastrophen haben nicht nur physische Folgen auf den Menschen, sondern auch psychische. Darunter fallen zBsp.: eine Zunahme der Depressionssymptomatik nach Überschwemmungen, Traumatisierungen durch Feuer, einem Anstieg von zwischenmenschlicher Aggression durch häufigere Hitzeperioden.',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBtnText,
-                                  ),
-                            ),
+                          child: Text(
+                            '\nAnstieg von \nzwischenmenschlicher \nAggression durch häufigere \nHitzeperioden',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBtnText,
+                                  fontSize: 27.0,
+                                ),
                           ),
                         ),
                       ),
@@ -203,6 +201,36 @@ class _NaturkatastrophenFolgenWidgetState
                                 0.0, 0.0, 20.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
+                                context.pushNamed('Quiz_Naturkatastrophen');
+                              },
+                              text: 'Zum Quiz',
+                              options: FFButtonOptions(
+                                width: 300.0,
+                                height: 40.0,
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: Color(0xFF0865AD),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
+                                borderSide: BorderSide(
+                                  color: Colors.transparent,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 20.0, 0.0),
+                            child: FFButtonWidget(
+                              onPressed: () async {
                                 context.pushNamed('KlimaOverview');
                               },
                               text: 'Zu anderen Klima Themen',
@@ -235,12 +263,49 @@ class _NaturkatastrophenFolgenWidgetState
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.1),
-                child: Image.asset(
-                  'assets/images/ezgif.com-gif-maker_(5).gif',
-                  width: MediaQuery.sizeOf(context).width * 0.104,
-                  height: MediaQuery.sizeOf(context).height * 0.338,
-                  fit: BoxFit.cover,
+                alignment: AlignmentDirectional(0.41, -1.1),
+                child: Container(
+                  width: MediaQuery.sizeOf(context).width * 0.24,
+                  height: MediaQuery.sizeOf(context).width * 0.24,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).info,
+                    shape: BoxShape.circle,
+                  ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Zunahme der \nDepressionssymtomatik \nnach Überschwemmungen',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 26.0,
+                          ),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.49, 0.66),
+                child: Container(
+                  width: MediaQuery.sizeOf(context).width * 0.15,
+                  height: MediaQuery.sizeOf(context).width * 0.15,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).info,
+                    shape: BoxShape.circle,
+                  ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Traumatisierungen \ndurch Feuer',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 20.0,
+                          ),
+                    ),
+                  ),
                 ),
               ),
             ],

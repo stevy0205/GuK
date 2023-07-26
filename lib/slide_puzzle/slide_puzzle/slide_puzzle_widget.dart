@@ -67,7 +67,10 @@ class _SlidePuzzleWidgetState extends State<SlidePuzzleWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Column(
+          child:
+              // Spielansatz der weiterentwickelt werden kann, Grundbaustein war das Tutorial zum Slide Puzzle für Flutterflow(https://blog.flutterflow.io/building-flutter-slide-puzzle-with-minimal-code/). Idee war es so umzuwandeln, dass es mit Begriffen funktioniert und Kinder diese Begriffe zusammenfügen können. Aufgrund von fehlender Debugging funktionen nicht fertiggestellt. Code dazu ist aus dem Tutorial angepasst übernommen auf die neuere Version von Flutterflow.
+              // Drinnen gelassen für eventuelle weiterentwicklung eines anderen Teams.
+              Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Align(

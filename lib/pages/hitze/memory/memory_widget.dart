@@ -159,20 +159,26 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Verbreitung',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 40.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 40.0),
+                                                child: AutoSizeText(
+                                                  'Verbreitung',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 27.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -255,9 +261,10 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 0.0, 0.0, 40.0),
+                                                        0.0, 0.0, 0.0, 20.0),
                                                 child: AutoSizeText(
-                                                  'Herkunft',
+                                                  'Herkunft:\nSüd-Ost Asien',
+                                                  textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -267,7 +274,7 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryBtnText,
-                                                        fontSize: 40.0,
+                                                        fontSize: 24.0,
                                                         fontWeight:
                                                             FontWeight.bold,
                                                       ),
@@ -355,21 +362,25 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                               child: Align(
                                                 alignment: AlignmentDirectional(
                                                     0.0, 1.0),
-                                                child: AutoSizeText(
-                                                  'Tigermücke',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryBtnText,
-                                                        fontSize: 40.0,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 0.0, 40.0),
+                                                  child: AutoSizeText(
+                                                    'Tigermücke',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryBtnText,
+                                                          fontSize: 27.0,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -450,20 +461,26 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Stechmücke',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 40.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 40.0),
+                                                child: AutoSizeText(
+                                                  'Stechmücke',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 27.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -552,9 +569,10 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 0.0, 40.0),
+                                                          0.0, 0.0, 0.0, 20.0),
                                                   child: AutoSizeText(
-                                                    'Herkunft',
+                                                    'Herkunft:\nSüd-Ost Asien',
+                                                    textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -563,7 +581,7 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryBtnText,
-                                                          fontSize: 40.0,
+                                                          fontSize: 24.0,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),
@@ -648,20 +666,27 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Übertragungskrankheit',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 32.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 30.0),
+                                                child: AutoSizeText(
+                                                  'Übertragungs-\nkrankheit',
+                                                  textAlign: TextAlign.center,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 22.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -916,20 +941,26 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Verbreitung',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 40.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 40.0),
+                                                child: AutoSizeText(
+                                                  'Verbreitung',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 27.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -1009,20 +1040,27 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Übertragungskrankheit',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 32.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 30.0),
+                                                child: AutoSizeText(
+                                                  'Übertragungs-\nkrankheit',
+                                                  textAlign: TextAlign.center,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 22.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -1205,20 +1243,26 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Tigermücke',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 40.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 40.0),
+                                                child: AutoSizeText(
+                                                  'Tigermücke',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 27.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -1386,20 +1430,26 @@ class _MemoryWidgetState extends State<MemoryWidget> {
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
-                                              child: AutoSizeText(
-                                                'Stechmücke',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBtnText,
-                                                          fontSize: 40.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 40.0),
+                                                child: AutoSizeText(
+                                                  'Stechmücke',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                        fontSize: 27.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),

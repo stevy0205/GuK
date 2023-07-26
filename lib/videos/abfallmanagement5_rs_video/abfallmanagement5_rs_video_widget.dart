@@ -81,20 +81,23 @@ class _Abfallmanagement5RsVideoWidgetState
           actions: [
             Align(
               alignment: AlignmentDirectional(0.0, 0.0),
-              child: InkWell(
-                splashColor: Colors.transparent,
-                focusColor: Colors.transparent,
-                hoverColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                onTap: () async {
-                  context.pushNamed('GameOverview');
-                },
-                child: Text(
-                  'Home',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Poppins',
-                        color: FlutterFlowTheme.of(context).primaryBtnText,
-                      ),
+              child: Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.pushNamed('GameOverview');
+                  },
+                  child: Text(
+                    'Zur Übersicht',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Poppins',
+                          color: FlutterFlowTheme.of(context).primaryBtnText,
+                        ),
+                  ),
                 ),
               ),
             ),

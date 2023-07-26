@@ -221,7 +221,7 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Der Tödlichster Tsunami, führte zu 225.000 Todesopfern \nin 14 Ländern\nausgelöst durch ein Erdbeben \nder Stärke 9,2\n',
+                      'Der Tödlichste Tsunami, führte \nzu 225.000 Todesopfern \nin 14 Ländern\nausgelöst durch ein Erdbeben \nder Stärke 9,2',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
@@ -244,7 +244,7 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Erdbeben und Tsunamis sind \nfür ca. 66 % der heftigsten \nNaturkatastrophen verantwortlich\n',
+                      'Erdbeben und Tsunamis sind \nfür ca. 66 % der heftigsten \nNaturkatastrophen verantwortlich',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
@@ -267,7 +267,7 @@ class _TsunamisMortalitaetWidgetState extends State<TsunamisMortalitaetWidget> {
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Tsunami Wellen mit \nAuflaufhöhen von über 520m',
+                      'Tsunami Wellen mit \nAuflaufhöhen von bis zu 520m',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',

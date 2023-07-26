@@ -199,66 +199,70 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
               if (FFAppState().showHizeLebensmittel)
                 Align(
                   alignment: AlignmentDirectional(0.98, 0.03),
-                  child: Container(
-                    width: MediaQuery.sizeOf(context).width * 0.25,
-                    height: MediaQuery.sizeOf(context).height * 0.5,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF0865AD),
-                    ),
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 50.0, 0.0),
                     child: Container(
-                      width: 25.0,
-                      height: 50.0,
-                      child: Stack(
-                        children: [
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 20.0, 0.0),
-                              child: Text(
-                                'Hohe Lufttemperatur im Frühjahr und Sommer begünstigt das Wachstum von Bakterien in Nahrungsmitteln und damit die Zunahme nahrungsmittelbedingter Infektionen. Sommerliche Hitze, unterbrochene Kühlketten, unsachgemäße Nahrungsmittelverarbeitung sowie ungeeignete Aufbewahrung von Speisen können zu einer Zunahme nahrungsmittelbedingter Infektionen führen.',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Poppins',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBtnText,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional(0.71, 1.0),
-                            child: FFButtonWidget(
-                              onPressed: () async {
-                                setState(() {
-                                  FFAppState().showHizeLebensmittel = false;
-                                });
-                              },
-                              text: 'Hide',
-                              options: FFButtonOptions(
-                                height: 40.0,
+                      width: MediaQuery.sizeOf(context).width * 0.35,
+                      height: MediaQuery.sizeOf(context).height * 0.4,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF0865AD),
+                      ),
+                      child: Container(
+                        width: 50.0,
+                        height: 50.0,
+                        child: Stack(
+                          children: [
+                            Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 0.0, 24.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFF39D2C0),
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .titleSmall
-                                    .override(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
-                                    ),
-                                elevation: 3.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
+                                    20.0, 0.0, 20.0, 0.0),
+                                child: Text(
+                                  'Hohe Lufttemperaturen im Frühjahr und Sommer begünstigten das Wachstum von Bakterien in Nahrungsmitteln und damit die Zunahme nahrungsmittelbedingter Infektionen. Gefährliche Bakterien wie Salmonella Typhi können entstehen und die Gesundheit des Menschen negativ beeinflussen.',
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBtnText,
+                                      ),
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
-                          ),
-                        ],
+                            Align(
+                              alignment: AlignmentDirectional(0.71, 1.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  setState(() {
+                                    FFAppState().showHizeLebensmittel = false;
+                                  });
+                                },
+                                text: 'Hide',
+                                options: FFButtonOptions(
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      24.0, 0.0, 24.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: Color(0xFF39D2C0),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        color: Colors.white,
+                                      ),
+                                  elevation: 3.0,
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -267,8 +271,8 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                 alignment: AlignmentDirectional(-0.97, -0.8),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://www.praxisvita.de/assets/styles/article_image/public/field/image/was-essen-bei-hitze.jpg?itok=v_xglMmj',
+                  child: Image.asset(
+                    'assets/images/Schimmel.gif',
                     width: 701.0,
                     fit: BoxFit.cover,
                   ),
@@ -276,7 +280,7 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
               ),
               if (!FFAppState().showHizeLebensmittel)
                 Align(
-                  alignment: AlignmentDirectional(-0.77, 0.19),
+                  alignment: AlignmentDirectional(-0.04, 0.7),
                   child: Container(
                     width: 300.0,
                     height: 300.0,
@@ -302,20 +306,9 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                     ),
                   ),
                 ),
-              Align(
-                alignment: AlignmentDirectional(0.18, 0.07),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://th.bing.com/th/id/R.4e75fafbad41645378d59f6f7b6d7b6e?rik=yaewNrNcVURLyg&riu=http%3a%2f%2fwww.medmix.at%2fwp-content%2fuploads%2f2015%2f07%2fsalmonella%c2%a9NIAID.jpg&ehk=KBy9kZFBx0J%2fPb8I2qmpraoAEholrQmVK6UOetGksBI%3d&risl=&pid=ImgRaw&r=0',
-                    width: 523.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
               if (!FFAppState().showHizeLebensmittel)
                 Align(
-                  alignment: AlignmentDirectional(0.35, 0.66),
+                  alignment: AlignmentDirectional(0.46, 0.75),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -358,7 +351,7 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                 ),
               if (!FFAppState().showHizeLebensmittel)
                 Align(
-                  alignment: AlignmentDirectional(-0.24, -0.65),
+                  alignment: AlignmentDirectional(0.45, -0.09),
                   child: Container(
                     width: 200.0,
                     height: 200.0,
@@ -386,7 +379,7 @@ class _HitzeLebensmittelWidgetState extends State<HitzeLebensmittelWidget> {
                 ),
               if (!FFAppState().showHizeLebensmittel)
                 Align(
-                  alignment: AlignmentDirectional(0.33, -0.87),
+                  alignment: AlignmentDirectional(0.31, -0.95),
                   child: Container(
                     width: 250.0,
                     height: 250.0,

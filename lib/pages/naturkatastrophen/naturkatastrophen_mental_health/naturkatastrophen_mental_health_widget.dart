@@ -225,7 +225,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                                     20.0, 0.0, 20.0, 0.0),
                                 child: Text(
                                   'Schwerwiegende Extremwetterereignisse können starke Ängste hervorrufen und traumatische Erlebnisse darstellen. Diese Traumata und anhaltender Stress im längeren Verlauf nach dem Ereignis können Ursache für negative psychische Gesundheitsauswirkungen sein. Nach Extremwetterereignisse ist ein Anstieg von Angststörungen, depressiven Symptomen, posttraumatischem Belastungsstress und Verhaltensstörungen bei Kindern und Jugendlichen zu beobachten.',
-                                  textAlign: TextAlign.justify,
+                                  textAlign: TextAlign.start,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -334,7 +334,7 @@ class _NaturkatastrophenMentalHealthWidgetState
                             20.0, 0.0, 20.0, 0.0),
                         child: Text(
                           'Naturkatastrophen haben nicht nur physische Folgen auf den Menschen, sondern auch psychische. Darunter fallen zBsp.: eine Zunahme der Depressionssymptomatik nach Überschwemmungen, Traumatisierungen durch Feuer, einem Anstieg von zwischenmenschlicher Aggression durch häufigere Hitzeperioden.',
-                          textAlign: TextAlign.justify,
+                          textAlign: TextAlign.start,
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
@@ -351,8 +351,8 @@ class _NaturkatastrophenMentalHealthWidgetState
                 alignment: AlignmentDirectional(0.07, -0.71),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://i.pinimg.com/originals/2e/ee/69/2eee693dbe74264b3c76af02db689ffc.jpg',
+                  child: Image.asset(
+                    'assets/images/naturkatastrophen.jpg',
                     width: 500.0,
                     fit: BoxFit.cover,
                   ),

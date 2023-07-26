@@ -89,14 +89,14 @@ class _NaturkatastrophenGeburtenrateWidgetState
                                 child: Align(
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: AutoSizeText(
-                                    'Die Menschen \nin wärmeren und \närmeren Ländern \nimmer mehr \nKinder bekommen werden, \nals die Menschen in \nkälteren Ländern',
+                                    'Menschen in \nwärmeren und ärmeren Ländern bekommen mehr Kinder als Menschen in kälteren und wohlhabeneren \nLändern',
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Color(0xFF0865AD),
-                                          fontSize: 20.0,
+                                          fontSize: 23.0,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
@@ -130,14 +130,19 @@ class _NaturkatastrophenGeburtenrateWidgetState
                           children: [
                             Align(
                               alignment: AlignmentDirectional(0.0, -1.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.asset(
-                                  'assets/images/kinder.jpg',
-                                  width: MediaQuery.sizeOf(context).width * 0.4,
-                                  height:
-                                      MediaQuery.sizeOf(context).height * 0.4,
-                                  fit: BoxFit.cover,
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    70.0, 0.0, 0.0, 0.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.asset(
+                                    'assets/images/kinder.jpg',
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.4,
+                                    height:
+                                        MediaQuery.sizeOf(context).height * 0.4,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -154,14 +159,14 @@ class _NaturkatastrophenGeburtenrateWidgetState
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       40.0, 0.0, 30.0, 0.0),
                                   child: Text(
-                                    'In Regionen, in denen die Temperaturen steigen, werden mehr Jungen geboren, während in Gebieten mit Dürre und Waldbränden mehr Mädchen geboren werden',
+                                    'In wärmeren \nRegionen werden mehr Jungen, in trockenen Gebieten mit Waldbränden werden mehr Mädchen \ngeboren.',
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Colors.white,
-                                          fontSize: 20.0,
+                                          fontSize: 23.0,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
@@ -309,7 +314,7 @@ class _NaturkatastrophenGeburtenrateWidgetState
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(-0.58, 0.75),
+                alignment: AlignmentDirectional(-0.98, 0.76),
                 child: Text(
                   'https://kurier.at/wissen/werden-wegen-des-klimawandels-weniger-buben-geboren/400386893',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(

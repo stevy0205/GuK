@@ -61,7 +61,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
-                          'GameOverview',
+                          'Videos',
                           extra: <String, dynamic>{
                             kTransitionInfoKey: TransitionInfo(
                               hasTransition: true,
@@ -71,7 +71,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           },
                         );
                       },
-                      text: 'Kids',
+                      text: 'Kinder',
                       options: FFButtonOptions(
                         width: 130.0,
                         height: 40.0,
@@ -114,7 +114,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           },
                         );
                       },
-                      text: 'Adults',
+                      text: 'sene',
                       options: FFButtonOptions(
                         width: 130.0,
                         height: 40.0,

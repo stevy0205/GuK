@@ -250,6 +250,16 @@ class _HitzeTiereWidgetState extends State<HitzeTiereWidget> {
                       fit: BoxFit.fill,
                     ),
                   ),
+                  Align(
+                    alignment: AlignmentDirectional(-0.68, -0.04),
+                    child: Text(
+                      'Weltweite Meerestemperatur',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            fontSize: 26.0,
+                          ),
+                    ),
+                  ),
                 ],
               ),
               Align(
@@ -260,15 +270,18 @@ class _HitzeTiereWidgetState extends State<HitzeTiereWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    '90 Prozent der Korallen geschädigt',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).alternate,
-                          fontSize: 40.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      '90% der Korallen des Great Barrier Reefs geschädigt',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).alternate,
+                            fontSize: 35.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
                 ),
               ),

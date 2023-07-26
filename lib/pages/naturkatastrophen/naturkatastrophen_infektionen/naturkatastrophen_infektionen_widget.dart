@@ -248,8 +248,8 @@ class _NaturkatastrophenInfektionenWidgetState
                 alignment: AlignmentDirectional(-0.02, -0.46),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
-                  child: Image.network(
-                    'https://static.nationalgeographic.de/files/styles/image_3200/public/01-Rising-Seas-Cities.webp?w=733&h=489&q=100',
+                  child: Image.asset(
+                    'assets/images/ueberschwemmung.webp',
                     width: 850.0,
                     fit: BoxFit.cover,
                   ),
@@ -278,7 +278,7 @@ class _NaturkatastrophenInfektionenWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 20.0, 0.0),
                                 child: Text(
-                                  'Mit dem steigenden Wasserpegel durch bspw.: verstärkte Regenfälle wird auch das Infektionsrisiko in Hochwassergebieten höher: Verschiedene Bakterien und Keime aber auch Giftstoffe können ins Grundwasser gelangen und Badeseen sowie Trinkwasser nachhaltig verunreinigen.\nDiese gesundheitlichen Gefahren steigen mit der Flut:\nMagen-Darm-Erkrankungen\nInfektionsrisiko mit Hepatitis A\nTetanus',
+                                  'Mit dem steigenden Wasserpegel durch beispielsweise verstärkte Regenfälle wird auch das Infektionsrisiko in Hochwassergebieten höher: Verschiedene Bakterien und Keime aber auch Giftstoffe können ins Grundwasser gelangen und Badeseen sowie Trinkwasser nachhaltig verunreinigen.\nDiese gesundheitlichen Gefahren steigen mit der Flut:\nMagen-Darm-Erkrankungen\nInfektionsrisiko mit Hepatitis A\nTetanus',
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -329,162 +329,174 @@ class _NaturkatastrophenInfektionenWidgetState
                     ),
                   ),
                 ),
-              Align(
-                alignment: AlignmentDirectional(-0.76, -0.94),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(-0.76, -0.94),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
                     ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Hochwasser',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.98, -0.27),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
-                    ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Kläranlagen',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Hochwasser',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.69, -0.98),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(-0.98, -0.27),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
                     ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Giftstoffe',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.86, 0.56),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
-                    ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Erreger',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Kläranlagen',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.96, -0.28),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(0.69, -0.98),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
                     ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Gefahren',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.84, 0.57),
-                child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF0865AD),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondary,
-                      width: 3.0,
-                    ),
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      'Keime',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                          ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Giftstoffe',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
-              ),
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(-0.86, 0.56),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
+                    ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Erreger',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
+                    ),
+                  ),
+                ),
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(0.96, -0.28),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
+                    ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Gefahren',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
+                    ),
+                  ),
+                ),
+              if (!FFAppState().showNaturkatastrophenInfektionen)
+                Align(
+                  alignment: AlignmentDirectional(0.84, 0.57),
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0865AD),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).secondary,
+                        width: 3.0,
+                      ),
+                    ),
+                    child: Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        'Keime',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Poppins',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 30.0,
+                            ),
+                      ),
+                    ),
+                  ),
+                ),
               if (FFAppState().showNaturkatastrophenInfektionen)
                 Align(
                   alignment: AlignmentDirectional(0.35, -0.05),

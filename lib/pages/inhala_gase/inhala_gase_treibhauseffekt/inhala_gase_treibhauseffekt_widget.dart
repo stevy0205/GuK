@@ -147,6 +147,34 @@ class _InhalaGaseTreibhauseffektWidgetState
                                       ),
                                     ),
                                   ),
+                                  FFButtonWidget(
+                                    onPressed: () async {
+                                      context.pushNamed('Quiz_KHGW');
+                                    },
+                                    text: 'Zum Quiz!',
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF0865AD),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.white,
+                                            fontSize: 20.0,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                               back: Container(
@@ -299,13 +327,13 @@ class _InhalaGaseTreibhauseffektWidgetState
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.92, 0.55),
+                alignment: AlignmentDirectional(0.9, 0.55),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/Bild_14.06.23_um_12.08.jpg',
-                    width: MediaQuery.sizeOf(context).width * 0.3,
-                    height: MediaQuery.sizeOf(context).height * 0.4,
+                    'assets/images/Bildschirmfoto_2023-07-25_um_17.02.00.png',
+                    width: MediaQuery.sizeOf(context).width * 0.34,
+                    height: MediaQuery.sizeOf(context).height * 0.43,
                     fit: BoxFit.cover,
                   ),
                 ),

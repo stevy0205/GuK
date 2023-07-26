@@ -80,8 +80,8 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/Hitze_Generell_Pic.gif',
-                    width: 524.0,
+                    'assets/images/World.gif',
+                    width: 750.0,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -203,7 +203,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                 Align(
                   alignment: AlignmentDirectional(0.96, -0.86),
                   child: Container(
-                    width: MediaQuery.sizeOf(context).width * 0.4,
+                    width: MediaQuery.sizeOf(context).width * 0.35,
                     height: MediaQuery.sizeOf(context).height * 0.514,
                     decoration: BoxDecoration(
                       color: Color(0xFF0865AD),
@@ -220,7 +220,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                                   20.0, 20.0, 20.0, 20.0),
                               child: AutoSizeText(
                                 'Der Klimawandel hat zu einer signifikanten Zunahme von Hitzeereignissen geführt. Hitzewellen sind häufiger und intensiver geworden, während städtische Gebiete aufgrund von hohen Versiegelungsraten als Hitzeinseln fungieren. Diese Veränderungen haben schwerwiegende Auswirkungen auf die Landwirtschaft, da Pflanzen einem erhöhten Hitzestress ausgesetzt sind und Ernteerträge abnehmen. Zudem gefährdet die Hitze die menschliche Gesundheit, insbesondere bei vulnerablen Bevölkerungsgruppen. Um die Auswirkungen einzudämmen, sind umfassende Maßnahmen zur Reduzierung von Treibhausgasemissionen und zur Anpassung der Infrastruktur erforderlich. Zeitnahe und effektive Handlungen sind unerlässlich, um die Folgen der Hitze durch den Klimawandel zu mildern.\nQuelle: Bouchama, Abderrezak-Prognostic Factors in Heat Wave–Related DeathsA Meta-analysis',
-                                textAlign: TextAlign.justify,
+                                textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -276,7 +276,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                   alignment: AlignmentDirectional(0.62, 0.14),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(300.0, 0.0, 0.0, 250.0),
+                        EdgeInsetsDirectional.fromSTEB(530.0, 0.0, 0.0, 250.0),
                     child: Container(
                       width: 350.0,
                       height: 350.0,
@@ -294,8 +294,8 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: Text(
-                            'Hitzewellen',
-                            textAlign: TextAlign.justify,
+                            'Europa: \n72.210 Hitzetote im Jahr 2003',
+                            textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -360,7 +360,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(580.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(600.0, 50.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -391,7 +391,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             20.0, 70.0, 20.0, 0.0),
                                         child: Text(
-                                          'Hitzestress',
+                                          'Hitzeinseln\n',
                                           textAlign: TextAlign.justify,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -401,6 +401,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
                                                 fontSize: 20.0,
+                                                fontWeight: FontWeight.normal,
                                               ),
                                         ),
                                       ),
@@ -436,8 +437,8 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 20.0, 0.0),
                                         child: Text(
-                                          'Hitzeinseln',
-                                          textAlign: TextAlign.justify,
+                                          'Russland: \n55.736 Hitzetote im Jahr 2010',
+                                          textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -446,6 +447,7 @@ class _HitzeGenerellWidgetState extends State<HitzeGenerellWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBtnText,
                                                 fontSize: 30.0,
+                                                fontWeight: FontWeight.normal,
                                               ),
                                         ),
                                       ),

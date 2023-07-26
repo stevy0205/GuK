@@ -62,124 +62,129 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
           top: true,
           child: Stack(
             children: [
-              Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.9),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 0.0, 0.0),
-                            child: Container(
-                              width: 400.0,
-                              height: 40.0,
-                              decoration: BoxDecoration(
-                                color: Color(0xFF0865AD),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      context.pushNamed('Home');
-                                    },
-                                    text: 'Home',
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 0.0, 24.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF39D2C0),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                          ),
-                                      elevation: 3.0,
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(8.0),
-                                    ),
-                                  ),
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      context.pushNamed('KlimaOverview');
-                                    },
-                                    text: 'Zur Themenauswahl',
-                                    options: FFButtonOptions(
-                                      width: 300.0,
-                                      height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF0865AD),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                          ),
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(8.0),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 20.0, 0.0),
-                            child: FFButtonWidget(
-                              onPressed: () async {
-                                context.pushNamed('CO2-Tiere');
-                              },
-                              text: 'Weiter zu CO2-Tiere',
-                              options: FFButtonOptions(
-                                width: 300.0,
+              Align(
+                alignment: AlignmentDirectional(0.0, 0.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: AlignmentDirectional(-1.0, 0.9),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 0.0, 0.0),
+                              child: Container(
+                                width: 400.0,
                                 height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFF0865AD),
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .titleSmall
-                                    .override(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
-                                    ),
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0865AD),
+                                  borderRadius: BorderRadius.circular(10.0),
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    FFButtonWidget(
+                                      onPressed: () async {
+                                        context.pushNamed('Home');
+                                      },
+                                      text: 'Home',
+                                      options: FFButtonOptions(
+                                        height: 40.0,
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            24.0, 0.0, 24.0, 0.0),
+                                        iconPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: Color(0xFF39D2C0),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white,
+                                            ),
+                                        elevation: 3.0,
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
+                                    ),
+                                    FFButtonWidget(
+                                      onPressed: () async {
+                                        context.pushNamed('KlimaOverview');
+                                      },
+                                      text: 'Zur Themenauswahl',
+                                      options: FFButtonOptions(
+                                        width: 300.0,
+                                        height: 40.0,
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 0.0),
+                                        iconPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: Color(0xFF0865AD),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white,
+                                            ),
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 20.0, 0.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  context.pushNamed('CO2-Tiere');
+                                },
+                                text: 'Weiter zu CO2-Tiere',
+                                options: FFButtonOptions(
+                                  width: 300.0,
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: Color(0xFF0865AD),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        color: Colors.white,
+                                      ),
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 1.1),
@@ -191,118 +196,138 @@ class _CO2GenerellWidgetState extends State<CO2GenerellWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.47, -0.88),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/pngwing.com-2.png',
-                    width: 645.0,
-                    height: 687.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.67, -0.95),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/pngwing.com-2.png',
-                    width: 645.0,
-                    height: 687.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.25, -0.91),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/pngwing.com-2.png',
-                    width: 645.0,
-                    height: 687.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.84, 0.07),
+                alignment: AlignmentDirectional(0.82, -0.22),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.4,
+                  width: MediaQuery.sizeOf(context).width * 0.2,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(-0.85, -0.02),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      '                            Folgen\n   - Saure Niederschläge \n       schädigen Ökosysteme, \n       Böden, Gewässer, Pflanzen \n       und Tiere \n\n   - Treibhauseffekte heizen die \n       Erde auf\n\n',
+                      'Folgen',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 26.0,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 36.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.8, -0.96),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/pngwing.com-2.png',
-                    width: MediaQuery.sizeOf(context).width * 0.3,
-                    height: MediaQuery.sizeOf(context).height * 0.4,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.78, 0.06),
+                alignment: AlignmentDirectional(-0.67, -0.08),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.4,
+                  width: MediaQuery.sizeOf(context).width * 0.2,
+                  height: MediaQuery.sizeOf(context).height * 0.1,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Align(
-                    alignment: AlignmentDirectional(-0.85, -0.02),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      '                          Ursachen\n   - Verbrennung \n     - Kohle \n     - Öl\n   - Gas für Energieerzeugung \n   - Transport\n   - Industrie \n   - Brandrodung\n',
+                      'Ursachen',
+                      textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 26.0,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 36.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.72, -1.13),
+                alignment: AlignmentDirectional(-0.87, 0.56),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/kisspng-rain-cloud-clip-art-rain-cloud-5adc6f720cdce7.4385181615243958900527.png',
-                    width: MediaQuery.sizeOf(context).width * 0.25,
-                    height: MediaQuery.sizeOf(context).height * 0.4,
+                    'assets/images/fabrik.png',
+                    width: MediaQuery.sizeOf(context).width * 0.2,
+                    height: MediaQuery.sizeOf(context).height * 0.25,
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.76, 0.54),
+                alignment: AlignmentDirectional(-0.91, 0.76),
                 child: Text(
-                  'https://www.mendeley.com/reference-manager/library/collections/6126560c-7bd0\n-4c7c-b0c5-ee943e93e2d4/all-references/',
-                  textAlign: TextAlign.center,
+                  'https://www.flaticon.com/de/kostenlose-icons/fabrik',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Poppins',
-                        fontSize: 10.0,
-                        fontStyle: FontStyle.italic,
+                        fontSize: 13.0,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.36, -0.84),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/waldbrand.png',
+                    width: MediaQuery.sizeOf(context).width * 0.1,
+                    height: MediaQuery.sizeOf(context).height * 0.2,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.92, -0.59),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/schiff.png',
+                    width: MediaQuery.sizeOf(context).width * 0.2,
+                    height: MediaQuery.sizeOf(context).height * 0.2,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.58, 0.31),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/saurer-regen.png',
+                    width: MediaQuery.sizeOf(context).width * 0.2,
+                    height: MediaQuery.sizeOf(context).height * 0.25,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.57, 0.63),
+                child: Text(
+                  'Saurer Regen',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 36.0,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.6, -0.93),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/treibhauseffekt.png',
+                    width: MediaQuery.sizeOf(context).width * 0.2,
+                    height: MediaQuery.sizeOf(context).height * 0.23,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.62, -0.46),
+                child: Text(
+                  'Treibhauseffekte',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 36.0,
                       ),
                 ),
               ),

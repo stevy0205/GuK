@@ -65,8 +65,21 @@ class _AbfallmanagementResearchWidgetState
           child: Stack(
             children: [
               Align(
+                alignment: AlignmentDirectional(1.1, -0.35),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/png-transparent-magnifying-glass-green-glass-word-glass-grass-circle-removebg-preview.png',
+                    width: MediaQuery.sizeOf(context).width * 0.6,
+                    height: MediaQuery.sizeOf(context).height * 0.8,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Align(
                 alignment: AlignmentDirectional(0.0, 0.0),
                 child: Stack(
+                  alignment: AlignmentDirectional(0.0, -1.0),
                   children: [
                     Align(
                       alignment: AlignmentDirectional(-0.3, 1.0),
@@ -102,7 +115,7 @@ class _AbfallmanagementResearchWidgetState
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.75),
+                      alignment: AlignmentDirectional(0.0, 0.8),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -212,31 +225,45 @@ class _AbfallmanagementResearchWidgetState
                         ),
                       ),
                     ),
+                    Align(
+                      alignment: AlignmentDirectional(0.89, 0.74),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('Quiz_KHGW');
+                        },
+                        text: 'Zum Quiz!',
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: Color(0xFF0865AD),
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(2.97, -0.29),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/png-transparent-magnifying-glass-green-glass-word-glass-grass-circle-removebg-preview.png',
-                    width: 1195.0,
-                    height: 818.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.7, -0.5),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/GENERATIVE-RESEARCH-scaled-1.jpg',
-                    width: MediaQuery.sizeOf(context).width * 0.2,
-                    height: MediaQuery.sizeOf(context).height * 0.2,
-                    fit: BoxFit.cover,
-                  ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/mwmx0_600',
+                  width: 300.0,
+                  height: 200.0,
+                  fit: BoxFit.cover,
                 ),
               ),
             ],

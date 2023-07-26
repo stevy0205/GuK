@@ -225,7 +225,7 @@ class _WaldbrndeMortalitaetWidgetState
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Treibhausgase und mikro Partikel, welche bis in die Bronchien gelangen können, haben oft schwerwiegende Folgen.',
+                      'Treibhausgase und Mikropartikel, welche bis in die Bronchien gelangen können, haben oft schwerwiegende Folgen',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
@@ -271,7 +271,7 @@ class _WaldbrndeMortalitaetWidgetState
               Align(
                 alignment: AlignmentDirectional(-0.91, -0.28),
                 child: Text(
-                  'Pro Jahr, sterben 339.000 \nSubsahara Afrikaner an den Folgen \nvon Waldbränden ',
+                  'Pro Jahr, sterben 339.000 \nSubsahara-Afrikaner an den Folgen \nvon Waldbränden ',
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Poppins',

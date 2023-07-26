@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -194,15 +195,18 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Text(
-                    'Durchschnittlicher globaler pH-Wert der Ozeane',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'Durchschnittlicher globaler pH-Wert der Ozeane',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
@@ -244,7 +248,7 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
                             fontSize: 30.0,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
@@ -258,17 +262,41 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Text(
-                      '            Versauerung der Ozeane\n\n   - Artensterben in den Ozeanen\n   - Fische, Amphibien und \n       wirbellose Tiere \n   - Schädigungen \n        - der Kiemen \n        - im Fortpflanzungsverhalten \n   - TOD',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 30.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          'Versauerung der Ozeane',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 39.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
+                      ),
+                      Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: AutoSizeText(
+                          '\n   - Artensterben in den Ozeanen\n   - Fische, Amphibien und \n       wirbellose Tiere \n   - Schädigungen \n        - der Kiemen \n        - im Fortpflanzungsverhalten \n   - TOD',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 35.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),

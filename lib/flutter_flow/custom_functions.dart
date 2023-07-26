@@ -50,3 +50,10 @@ int getIndex(
 ) {
   return board.indexOf(value);
 }
+
+bool? checkAnswer(
+  String? answer,
+  String? correctAnswer,
+) {
+  return answer == correctAnswer;
+}

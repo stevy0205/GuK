@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -77,7 +78,7 @@ class _FussabdruckTreibhauseffektWidgetState
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.75),
+                                  alignment: AlignmentDirectional(-1.0, 0.85),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -264,18 +265,18 @@ class _FussabdruckTreibhauseffektWidgetState
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.8, 0.35),
+                      alignment: AlignmentDirectional(-0.8, 0.15),
                       child: Container(
                         width: 500.0,
-                        height: 219.0,
+                        height: 373.0,
                         decoration: BoxDecoration(
                           color: Color(0xFF0865AD),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 10.0),
-                          child: Text(
-                            '- Intensivstationen und OP-Bereiche machen rund 50% der Treibhausgasemissionen eines Krankenhauses aus\n- Nutzung von Narkosegasen 35% der Treibhausemissionen eines Krankenhauses ',
+                          child: AutoSizeText(
+                            '- Intensivstationen und OP-Bereiche machen rund 50% der Treibhausgasemissionen eines Krankenhauses aus\n- Nutzung von Narkosegasen 35% der Treibhausemissionen eines Krankenhauses\n\nQuelle: Zielbild: \"Klimaneutrales Krankenhaus\" Maßnahmen für mehr Klimaschutz im Krankenhaus (Wagner O, Jansen U, Tholen L et al.) ',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -292,7 +293,7 @@ class _FussabdruckTreibhauseffektWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.34, -0.83),
+                alignment: AlignmentDirectional(-0.25, -0.89),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.12,
                   height: MediaQuery.sizeOf(context).width * 0.12,
@@ -316,7 +317,7 @@ class _FussabdruckTreibhauseffektWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.89, -0.82),
+                alignment: AlignmentDirectional(-0.96, -0.9),
                 child: Container(
                   width: 163.0,
                   height: 163.0,
@@ -340,7 +341,7 @@ class _FussabdruckTreibhauseffektWidgetState
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.62, -0.43),
+                alignment: AlignmentDirectional(-0.62, -0.82),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.13,
                   height: MediaQuery.sizeOf(context).width * 0.13,

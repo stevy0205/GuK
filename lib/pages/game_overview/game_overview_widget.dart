@@ -417,38 +417,6 @@ class _GameOverviewWidgetState extends State<GameOverviewWidget> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                context.pushNamed('SlidePuzzle');
-                              },
-                              child: Container(
-                                width: MediaQuery.sizeOf(context).width * 0.15,
-                                height: MediaQuery.sizeOf(context).height * 0.2,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF0865AD),
-                                ),
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Text(
-                                    'Puzzle',
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryBtnText,
-                                          fontSize: 20.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
                                 context.pushNamed('Zuordnung');
                               },
                               child: Container(

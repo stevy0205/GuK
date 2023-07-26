@@ -93,18 +93,16 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                               ),
                               child: Align(
                                 alignment: AlignmentDirectional(0.0, 0.0),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 0.0),
-                                  child: Text(
-                                    'Die Forscher werteten für ihre aktuelle Analyse rund 56 Millionen Geburten im Zeitraum 1969 bis 1988 aus. Heiße Tage verkürzten Schwangerschaften demnach um durchschnittlich sechs Tage.',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF0865AD),
-                                        ),
-                                  ),
+                                child: Text(
+                                  '\nForscher analysierten \n56 Mio. Geburten von \n1969-1988. \nHeiße Tage verkürzten Schwangerschaften \num 6 Tage.',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Poppins',
+                                        color: Color(0xFF0865AD),
+                                        fontSize: 24.0,
+                                      ),
                                 ),
                               ),
                             ),
@@ -132,13 +130,18 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                       children: [
                         Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/bb096_.gif',
-                              width: MediaQuery.sizeOf(context).width * 0.2,
-                              height: MediaQuery.sizeOf(context).height * 0.25,
-                              fit: BoxFit.cover,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 100.0, 0.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/bb096_.gif',
+                                width: MediaQuery.sizeOf(context).width * 0.25,
+                                height:
+                                    MediaQuery.sizeOf(context).height * 0.34,
+                                fit: BoxFit.fill,
+                              ),
                             ),
                           ),
                         ),
@@ -155,22 +158,41 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                                 width: 6.0,
                               ),
                             ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 0.0, 20.0, 0.0),
-                                child: AutoSizeText(
-                                  'Die Forscher verglichen die Geburtenrate an einem Tag mit einer Höchsttemperatur von mehr als 32,2 Grad mit demselben Kalendertag in anderen Jahren. Bezugspunkt waren Tage mit einer Höchsttemperatur von 15,6 bis 21,1 Grad. ',
-                                  textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Poppins',
-                                        color: Color(0xFF0865AD),
-                                      ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Vergleich:',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 26.0,
+                                        ),
+                                  ),
                                 ),
-                              ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10.0, 10.0, 10.0, 10.0),
+                                    child: AutoSizeText(
+                                      'Geburtenraten an \nTagen mit über \n32,2 Grad mit demselben \nKalendertag in Jahren \nmit 15,6 bis 21,1 Grad \nHöchsttemperatur',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF0865AD),
+                                            fontSize: 22.0,
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -188,35 +210,45 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                                 width: 4.0,
                               ),
                             ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    30.0, 0.0, 30.0, 0.0),
-                                child: Text(
-                                  'Im Vergleich dazu stieg die Geburtenrate am heißen Tag und am folgenden Tag um zusammengenommen 1,63 pro 100.000 Geburten an. Erst 15 Tage nach dem heißen Tag hatte sich die Geburtenrate wieder normalisiert.',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Poppins',
-                                        color: Color(0xFF0865AD),
-                                        fontSize: 14.0,
-                                      ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Ergebnis:',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 26.0,
+                                        ),
+                                  ),
                                 ),
-                              ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20.0, 20.0, 20.0, 20.0),
+                                    child: Text(
+                                      'Geburtenrate stieg \num 1,63 pro 100.000 Geburten am \nheißen Tag und \ndem Folgetag',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF0865AD),
+                                            fontSize: 24.0,
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
                       ],
-                    ),
-                    Text(
-                      'https://m.focus.de/familie/eltern/durchschnittlich-sechs-tage-kuerzer-verkuerzte-schwangerschaften-kinder-kommen-wegen-klimawandel-frueher-zur-welt_id_11415368.html',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 13.0,
-                            fontStyle: FontStyle.italic,
-                          ),
                     ),
                     Expanded(
                       child: Align(
@@ -344,6 +376,16 @@ class _HitzeGeburtenrateWidgetState extends State<HitzeGeburtenrateWidget> {
                   width: MediaQuery.sizeOf(context).width * 0.104,
                   height: MediaQuery.sizeOf(context).height * 0.338,
                   fit: BoxFit.cover,
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.63, -0.99),
+                child: Text(
+                  'https://m.focus.de/familie/eltern/durchschnittlich-sechs-tage-kuerzer-verkuerzte-schwangerschaften-\nkinder-kommen-wegen-klimawandel-frueher-zur-welt_id_11415368.html',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Poppins',
+                        fontSize: 10.0,
+                      ),
                 ),
               ),
             ],

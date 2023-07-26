@@ -82,7 +82,7 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/Hitze_Mental_Health_pic.png',
+                    'assets/images/schaubild.png',
                     width: MediaQuery.sizeOf(context).width * 0.6,
                     height: MediaQuery.sizeOf(context).height * 0.35,
                     fit: BoxFit.fill,
@@ -313,6 +313,20 @@ class _HitzeMentalHealthWidgetState extends State<HitzeMentalHealthWidget> {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
+                    if (FFAppState().showHitzeMental)
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            900.0, 50.0, 0.0, 0.0),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/brain.gif',
+                            width: 300.0,
+                            height: 200.0,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
                     Expanded(
                       child: Align(
                         alignment: AlignmentDirectional(-1.0, 0.9),

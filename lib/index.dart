@@ -1,5 +1,5 @@
 // Export pages
-export '/pages/quiz/quizzes/quiz_hitze/quiz_hitze_widget.dart'
+export '/pages/quiz/hitze/quiz_hitze/quiz_hitze_widget.dart'
     show QuizHitzeWidget;
 export '/pages/home/home_widget.dart' show HomeWidget;
 export '/pages/hitze/memory/memory_widget.dart' show MemoryWidget;
@@ -18,9 +18,10 @@ export '/pages/hitze/hitze_mortalitaet/hitze_mortalitaet_widget.dart'
     show HitzeMortalitaetWidget;
 export '/pages/hitze/hitze_dir_indir_folgen/hitze_dir_indir_folgen_widget.dart'
     show HitzeDirIndirFolgenWidget;
-export '/pages/quiz/antwort_seiten/antwort_hitze/antwort_hitze_widget.dart'
+export '/pages/quiz/hitze/antwort_hitze/antwort_hitze_widget.dart'
     show AntwortHitzeWidget;
-export '/pages/quiz/ergebniss/ergebniss_widget.dart' show ErgebnissWidget;
+export '/pages/quiz/hitze/ergebniss_hitze/ergebniss_hitze_widget.dart'
+    show ErgebnissHitzeWidget;
 export '/pages/hitze/hitze_generell/hitze_generell_widget.dart'
     show HitzeGenerellWidget;
 export '/pages/naturkatastrophen/naturkatastrophen_generell/naturkatastrophen_generell_widget.dart'
@@ -53,9 +54,9 @@ export '/pages/abfall/abfallmanagement_k_h/abfallmanagement_k_h_widget.dart'
     show AbfallmanagementKHWidget;
 export '/pages/fussabdruck_k_h/fussabdruck_treibhauseffekt/fussabdruck_treibhauseffekt_widget.dart'
     show FussabdruckTreibhauseffektWidget;
-export '/pages/quiz/quizzes/quiz_geburt/quiz_geburt_widget.dart'
+export '/pages/quiz/geburt/quiz_geburt/quiz_geburt_widget.dart'
     show QuizGeburtWidget;
-export '/pages/quiz/antwort_seiten/antwort_geburt/antwort_geburt_widget.dart'
+export '/pages/quiz/geburt/antwort_geburt/antwort_geburt_widget.dart'
     show AntwortGeburtWidget;
 export '/pages/game_overview/game_overview_widget.dart' show GameOverviewWidget;
 export '/pages/abfall/abfallmanagement_reduce/abfallmanagement_reduce_widget.dart'
@@ -69,25 +70,25 @@ export '/pages/abfall/abfallmanagement_rethink/abfallmanagement_rethink_widget.d
 export '/pages/abfall/abfallmanagement_research/abfallmanagement_research_widget.dart'
     show AbfallmanagementResearchWidget;
 export '/pages/abfall/zuordnung/zuordnung_widget.dart' show ZuordnungWidget;
-export '/pages/quiz/antwort_seiten/antwort_klima_auf_gesundheit/antwort_klima_auf_gesundheit_widget.dart'
+export '/pages/quiz/klima_auf_gesundheit/antwort_klima_auf_gesundheit/antwort_klima_auf_gesundheit_widget.dart'
     show AntwortKlimaAufGesundheitWidget;
-export '/pages/quiz/antwort_seiten/antwort_k_h_g_w/antwort_k_h_g_w_widget.dart'
+export '/pages/quiz/khwg/antwort_k_h_g_w/antwort_k_h_g_w_widget.dart'
     show AntwortKHGWWidget;
-export '/pages/quiz/antwort_seiten/antwort_mental/antwort_mental_widget.dart'
+export '/pages/quiz/mental/antwort_mental/antwort_mental_widget.dart'
     show AntwortMentalWidget;
-export '/pages/quiz/antwort_seiten/antwort_naturkatastropen/antwort_naturkatastropen_widget.dart'
+export '/pages/quiz/naturkatastrophen/antwort_naturkatastropen/antwort_naturkatastropen_widget.dart'
     show AntwortNaturkatastropenWidget;
-export '/pages/quiz/antwort_seiten/antwort_tiere/antwort_tiere_widget.dart'
+export '/pages/quiz/tiere/antwort_tiere/antwort_tiere_widget.dart'
     show AntwortTiereWidget;
-export '/pages/quiz/quizzes/quiz_klima_auf_gesundheit/quiz_klima_auf_gesundheit_widget.dart'
+export '/pages/quiz/klima_auf_gesundheit/quiz_klima_auf_gesundheit/quiz_klima_auf_gesundheit_widget.dart'
     show QuizKlimaAufGesundheitWidget;
-export '/pages/quiz/quizzes/quiz_k_h_g_w/quiz_k_h_g_w_widget.dart'
+export '/pages/quiz/khwg/quiz_k_h_g_w/quiz_k_h_g_w_widget.dart'
     show QuizKHGWWidget;
-export '/pages/quiz/quizzes/quiz_mental/quiz_mental_widget.dart'
+export '/pages/quiz/mental/quiz_mental/quiz_mental_widget.dart'
     show QuizMentalWidget;
-export '/pages/quiz/quizzes/quiz_tiere/quiz_tiere_widget.dart'
+export '/pages/quiz/tiere/quiz_tiere/quiz_tiere_widget.dart'
     show QuizTiereWidget;
-export '/pages/quiz/quizzes/quiz_naturkatastrophen/quiz_naturkatastrophen_widget.dart'
+export '/pages/quiz/naturkatastrophen/quiz_naturkatastrophen/quiz_naturkatastrophen_widget.dart'
     show QuizNaturkatastrophenWidget;
 export '/pages/naturkatastrophen/tsunamis_mortalitaet/tsunamis_mortalitaet_widget.dart'
     show TsunamisMortalitaetWidget;
@@ -127,3 +128,20 @@ export '/videos/anastaetika_video/anastaetika_video_widget.dart'
     show AnastaetikaVideoWidget;
 export '/videos/klimaneutrale_k_h_video/klimaneutrale_k_h_video_widget.dart'
     show KlimaneutraleKHVideoWidget;
+export '/quiz_k_h_g_w_copy/quiz_k_h_g_w_copy_widget.dart'
+    show QuizKHGWCopyWidget;
+export '/quiz_hitze_copy/quiz_hitze_copy_widget.dart' show QuizHitzeCopyWidget;
+export '/quiz_klima_auf_gesundheit_copy/quiz_klima_auf_gesundheit_copy_widget.dart'
+    show QuizKlimaAufGesundheitCopyWidget;
+export '/pages/quiz/tiere/ergebniss_tiere/ergebniss_tiere_widget.dart'
+    show ErgebnissTiereWidget;
+export '/pages/quiz/klima_auf_gesundheit/ergebniss_klima_auf_gesundheit/ergebniss_klima_auf_gesundheit_widget.dart'
+    show ErgebnissKlimaAufGesundheitWidget;
+export '/pages/quiz/khwg/ergebniss_k_h_g_w/ergebniss_k_h_g_w_widget.dart'
+    show ErgebnissKHGWWidget;
+export '/pages/quiz/naturkatastrophen/ergebniss_naturkatastrophen/ergebniss_naturkatastrophen_widget.dart'
+    show ErgebnissNaturkatastrophenWidget;
+export '/pages/quiz/geburt/ergebniss_geburt/ergebniss_geburt_widget.dart'
+    show ErgebnissGeburtWidget;
+export '/pages/quiz/mental/ergebniss_mental/ergebniss_mental_widget.dart'
+    show ErgebnissMentalWidget;

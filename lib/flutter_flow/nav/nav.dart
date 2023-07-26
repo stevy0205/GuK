@@ -111,9 +111,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'Ergebniss',
-          path: '/ergebniss',
-          builder: (context, params) => ErgebnissWidget(
+          name: 'Ergebniss_Hitze',
+          path: '/ergebnissHitze',
+          builder: (context, params) => ErgebnissHitzeWidget(
             score: params.getParam('score', ParamType.int),
           ),
         ),
@@ -434,6 +434,72 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'KlimaneutraleKHVideo',
           path: '/klimaneutraleKHVideo',
           builder: (context, params) => KlimaneutraleKHVideoWidget(),
+        ),
+        FFRoute(
+          name: 'Quiz_KHGWCopy',
+          path: '/quizKHGWCopy',
+          builder: (context, params) => QuizKHGWCopyWidget(
+            index: params.getParam('index', ParamType.int),
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Quiz_HitzeCopy',
+          path: '/quizHitzeCopy',
+          builder: (context, params) => QuizHitzeCopyWidget(
+            index: params.getParam('index', ParamType.int),
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Quiz_KlimaAufGesundheitCopy',
+          path: '/quizKlimaAufGesundheitCopy',
+          builder: (context, params) => QuizKlimaAufGesundheitCopyWidget(
+            index: params.getParam('index', ParamType.int),
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_Tiere',
+          path: '/ergebnissTiere',
+          builder: (context, params) => ErgebnissTiereWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_KlimaAufGesundheit',
+          path: '/ergebnissKlimaAufGesundheit',
+          builder: (context, params) => ErgebnissKlimaAufGesundheitWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_KHGW',
+          path: '/ergebnissKHGW',
+          builder: (context, params) => ErgebnissKHGWWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_Naturkatastrophen',
+          path: '/ergebnisNaturkatastrophen',
+          builder: (context, params) => ErgebnissNaturkatastrophenWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_Geburt',
+          path: '/ergebnissGeburt',
+          builder: (context, params) => ErgebnissGeburtWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'Ergebniss_Mental',
+          path: '/ergebnissMental',
+          builder: (context, params) => ErgebnissMentalWidget(
+            score: params.getParam('score', ParamType.int),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

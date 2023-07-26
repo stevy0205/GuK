@@ -226,8 +226,8 @@ class _FussabdruckCO2WidgetState extends State<FussabdruckCO2Widget> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/images/fussabdruckKH2016.png',
-                                width: MediaQuery.sizeOf(context).width * 0.5,
+                                'assets/images/Bildschirmfoto_2023-07-25_um_16.48.46.png',
+                                width: MediaQuery.sizeOf(context).width * 0.551,
                                 height: MediaQuery.sizeOf(context).height * 0.7,
                                 fit: BoxFit.fill,
                               ),

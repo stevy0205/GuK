@@ -73,13 +73,13 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'CO2 für mehr Ernteerträge ???\n\n+ Steigert die Photosynthese und damit auch den Ertrag\n\n     ABER\n\n- Düngeeffekt von CO2 durch Erderwärmung wettgemacht\n\nZUDEM\n\nWeniger Nährstoffe durch erhöhte CO2 Konzentration\n',
+                      'CO2 für mehr Ernteerträge ???\n\n+ Steigert die Photosynthese und \ndamit auch den Ertrag\n\nABER\n\n- Düngeeffekt von CO2 durch \nErderwärmung wettgemacht\n\nZUDEM\n\n- Weniger Nährstoffe durch erhöhte CO2 Konzentration\n',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Poppins',
                             color: FlutterFlowTheme.of(context).primaryBtnText,
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 29.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                   ),
@@ -238,15 +238,18 @@ class _CO2LebensmittelWidgetState extends State<CO2LebensmittelWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
-                  child: Text(
-                    'WICHTIG HIERBEI:\nKohlenstoffdioxid Sättigung\nAb wann funktioniert CO2 nicht mehr \nals Dünger ???',
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.0, 0.0),
+                    child: Text(
+                      'WICHTIG HIERBEI:\nKohlenstoffdioxid Sättigung\nAb wann funktioniert CO2 nicht mehr \nals Dünger ???',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
                   ),
                 ),
               ),
