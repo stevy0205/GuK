@@ -66,6 +66,33 @@ class _HitzeDirIndirFolgenWidgetState extends State<HitzeDirIndirFolgenWidget> {
             children: [
               Stack(
                 children: [
+                  Align(
+                    alignment: AlignmentDirectional(0.87, -0.84),
+                    child: Container(
+                      width: MediaQuery.sizeOf(context).width * 0.27,
+                      height: MediaQuery.sizeOf(context).width * 0.27,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).info,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          '44 Billionen \nUS-Dollar Schaden \nbis 2060\nbei 2,5 Grad Celsius Erderwärmung',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                fontSize: 32.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
+                      ),
+                    ),
+                  ),
                   Stack(
                     children: [
                       Stack(
@@ -317,14 +344,14 @@ class _HitzeDirIndirFolgenWidgetState extends State<HitzeDirIndirFolgenWidget> {
                             alignment: AlignmentDirectional(0.89, 0.61),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.3,
-                              height: MediaQuery.sizeOf(context).height * 0.3,
+                              height: MediaQuery.sizeOf(context).height * 0.35,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).info,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Text(
+                                  AutoSizeText(
                                     'Hitze: Indirekte Folgen',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -391,33 +418,6 @@ class _HitzeDirIndirFolgenWidgetState extends State<HitzeDirIndirFolgenWidget> {
                         ],
                       ),
                     ],
-                  ),
-                  Align(
-                    alignment: AlignmentDirectional(0.87, -0.84),
-                    child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.27,
-                      height: MediaQuery.sizeOf(context).width * 0.27,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).info,
-                        shape: BoxShape.circle,
-                      ),
-                      child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        child: Text(
-                          '44 Billionen \nUS-Dollar Schaden \nbis 2060\nbei 2,5 Grad Celsius Erderwärmung',
-                          textAlign: TextAlign.center,
-                          style: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .override(
-                                fontFamily: 'Poppins',
-                                color:
-                                    FlutterFlowTheme.of(context).primaryBtnText,
-                                fontSize: 32.0,
-                                fontWeight: FontWeight.w600,
-                              ),
-                        ),
-                      ),
-                    ),
                   ),
                 ],
               ),

@@ -258,7 +258,7 @@ class _CO2TiereWidgetState extends State<CO2TiereWidget> {
                 alignment: AlignmentDirectional(-0.89, -0.56),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.45,
-                  height: MediaQuery.sizeOf(context).height * 0.6,
+                  height: MediaQuery.sizeOf(context).height * 0.65,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),

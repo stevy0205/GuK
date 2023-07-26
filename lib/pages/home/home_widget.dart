@@ -114,7 +114,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           },
                         );
                       },
-                      text: 'sene',
+                      text: 'Erwachsene',
                       options: FFButtonOptions(
                         width: 130.0,
                         height: 40.0,
