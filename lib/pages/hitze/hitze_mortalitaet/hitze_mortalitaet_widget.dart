@@ -252,7 +252,7 @@ class _HitzeMortalitaetWidgetState extends State<HitzeMortalitaetWidget> {
                 alignment: AlignmentDirectional(-0.88, 0.35),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
-                  height: MediaQuery.sizeOf(context).height * 0.33,
+                  height: MediaQuery.sizeOf(context).height * 0.37,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).info,
                   ),
